@@ -3,3 +3,6 @@
 
 ## 지도 바로가기 
  https://geumsan-culture-map.netlify.app/
+
+ ![image](https://github.com/user-attachments/assets/82e1ac2b-1793-42ff-b55f-6e6b5d19de23)
+
