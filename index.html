@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css"/>
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c010f0a55ce2e4012ebf994da3cf41c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div class="legend">
+        <div class="content">
+            <div class="bars elems">
+                <div class="bar">조선 시대</div>
+                <div class="bar">미제공</div>
+                <div class="bar">삼국 시대</div>
+                <div class="bar">고려 시대</div>
+                <div class="bar">현대</div>
+                <div class="bar">임시정부</div>
+                <div class="bar">청동기</div>
+            </div>
+        </div>
+    </div>
+    
+            <div class="folium-map" id="map_6c010f0a55ce2e4012ebf994da3cf41c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c010f0a55ce2e4012ebf994da3cf41c = L.map(
+                "map_6c010f0a55ce2e4012ebf994da3cf41c",
+                {
+                    center: [36.1626, 127.4619],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_206f9125cca069fe3d156635752d7fdb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_206f9125cca069fe3d156635752d7fdb.addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var marker_73e39a0838f7a9607d98adf98b9fdc7f = L.marker(
+                [36.1626, 127.4619],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_ff07ed87fbef6d77d6f369d345b3ef43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_73e39a0838f7a9607d98adf98b9fdc7f.setIcon(icon_ff07ed87fbef6d77d6f369d345b3ef43);
+        
+    
+        var popup_1b6fa590c249a8b741a77639352c4e53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ec5e7e93454bb90779f2d75e682c01e = $(`<div id="html_5ec5e7e93454bb90779f2d75e682c01e" style="width: 100.0%; height: 100.0%;">금산군</div>`)[0];
+                popup_1b6fa590c249a8b741a77639352c4e53.setContent(html_5ec5e7e93454bb90779f2d75e682c01e);
+            
+        
+
+        marker_73e39a0838f7a9607d98adf98b9fdc7f.bindPopup(popup_1b6fa590c249a8b741a77639352c4e53)
+        ;
+
+        
+    
+    
+            marker_73e39a0838f7a9607d98adf98b9fdc7f.bindTooltip(
+                `<div>
+                     금산군
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11c6bd5c7e2678ce866f521b916f6a3e = L.marker(
+                [36.1303805, 127.4909586],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_fd3f200c73b422d5b38237cd06e8158b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_11c6bd5c7e2678ce866f521b916f6a3e.setIcon(icon_fd3f200c73b422d5b38237cd06e8158b);
+        
+    
+        var popup_eef8ea1e20c9e4fcc2d95f123d288eb0 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_58ebae4e5208d7b2e62af5cb87501510 = $(`<div id="html_58ebae4e5208d7b2e62af5cb87501510" style="width: 100.0%; height: 100.0%;">칠백의총은 임진왜란 때인 1592년 금산을 점거하고 있던 왜적을 무찌르다 순절한 조헌과 영규대사를 비롯한 칠백의사를 모신 곳이다. 조헌(趙憲, 1544~1592)은 이이(李珥)와 성혼(成渾)의 문인으로 1567년 식년문과에 병과로 급제하여 벼슬길에 올...</div>`)[0];
+                popup_eef8ea1e20c9e4fcc2d95f123d288eb0.setContent(html_58ebae4e5208d7b2e62af5cb87501510);
+            
+        
+
+        marker_11c6bd5c7e2678ce866f521b916f6a3e.bindPopup(popup_eef8ea1e20c9e4fcc2d95f123d288eb0)
+        ;
+
+        
+    
+    
+            marker_11c6bd5c7e2678ce866f521b916f6a3e.bindTooltip(
+                `<div>
+                     금산 칠백의총
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0714e72c9691871303bda7c2d3e903c6 = L.marker(
+                [36.1303805, 127.4909586],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_6821a6d39c3124ab88e6362a46fe41b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0714e72c9691871303bda7c2d3e903c6.setIcon(icon_6821a6d39c3124ab88e6362a46fe41b6);
+        
+    
+        var popup_1d536d3798268810c9d68578a85aca41 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_5088c2f939054fa17a4d8b36c6f7adce = $(`<div id="html_5088c2f939054fa17a4d8b36c6f7adce" style="width: 100.0%; height: 100.0%;">임진왜란 때 금산에서 일본군과 싸우다가 순절한 중봉 조헌(1544~1592) 선생이 남긴 7점의 유물이다.</div>`)[0];
+                popup_1d536d3798268810c9d68578a85aca41.setContent(html_5088c2f939054fa17a4d8b36c6f7adce);
+            
+        
+
+        marker_0714e72c9691871303bda7c2d3e903c6.bindPopup(popup_1d536d3798268810c9d68578a85aca41)
+        ;
+
+        
+    
+    
+            marker_0714e72c9691871303bda7c2d3e903c6.bindTooltip(
+                `<div>
+                     조헌 관련 유품 (趙憲 關聯 遺品)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28ce7f7898dc3cb12a401941c455d9b3 = L.marker(
+                [36.2110896, 127.4931209],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_20d9654daa3e9ca61c136e5e327c909a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28ce7f7898dc3cb12a401941c455d9b3.setIcon(icon_20d9654daa3e9ca61c136e5e327c909a);
+        
+    
+        var popup_56c9990240fb8168788e34d4a6d2b0b0 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_8e8985745971770cbfeb3ab86024abd9 = $(`<div id="html_8e8985745971770cbfeb3ab86024abd9" style="width: 100.0%; height: 100.0%;">이 은행나무는 신라 때부터 자연정자(自然亭子)를 이루었다고 전해지므로, 나무의 나이는 약 1,000년 정도로 추정된다. 500여 년 전 전라감사(全羅監司) 오모씨(吳某氏)가 이곳에 정자를 짓고 행정헌(杏亭軒)이라는 이름을 붙였다고 전해진다. 점필재 김...</div>`)[0];
+                popup_56c9990240fb8168788e34d4a6d2b0b0.setContent(html_8e8985745971770cbfeb3ab86024abd9);
+            
+        
+
+        marker_28ce7f7898dc3cb12a401941c455d9b3.bindPopup(popup_56c9990240fb8168788e34d4a6d2b0b0)
+        ;
+
+        
+    
+    
+            marker_28ce7f7898dc3cb12a401941c455d9b3.bindTooltip(
+                `<div>
+                     금산 요광리 은행나무
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_847b075928e81dc8b37ab3650d21a2d1 = L.marker(
+                [36.0542737, 127.4759457],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_b6f0009206cd67b2fc1ca81c4875e56a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_847b075928e81dc8b37ab3650d21a2d1.setIcon(icon_b6f0009206cd67b2fc1ca81c4875e56a);
+        
+    
+        var popup_79e3504029025918284a6b02bd9592a0 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_355057e59bc78c554f8675314d28d47b = $(`<div id="html_355057e59bc78c554f8675314d28d47b" style="width: 100.0%; height: 100.0%;">8보석사 입구에 서 있는 은행나무이다. 이 나무는 중심가지가 곧바로 솟아올라 높이가 40여 m에 이르며 옆으로가지가 뻗어 있어 그 폭이 50여 m가 되는 노거수(老巨樹)로, 나이는 1,000년 이상으로 추정한다. 장엄하고 위압적인 외형을 갖추고 있으며...</div>`)[0];
+                popup_79e3504029025918284a6b02bd9592a0.setContent(html_355057e59bc78c554f8675314d28d47b);
+            
+        
+
+        marker_847b075928e81dc8b37ab3650d21a2d1.bindPopup(popup_79e3504029025918284a6b02bd9592a0)
+        ;
+
+        
+    
+    
+            marker_847b075928e81dc8b37ab3650d21a2d1.bindTooltip(
+                `<div>
+                     금산 보석사 은행나무
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed47aadc6001a976832354c9ce8e4230 = L.marker(
+                [36.0594494, 127.4080247],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_af30b20eb19ec6208e350e7d583e3a34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ed47aadc6001a976832354c9ce8e4230.setIcon(icon_af30b20eb19ec6208e350e7d583e3a34);
+        
+    
+        var popup_aa55fad3bae036e3d7a57a85cf90dd52 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_510ed9b3ab7bdbfc5791b8443520667b = $(`<div id="html_510ed9b3ab7bdbfc5791b8443520667b" style="width: 100.0%; height: 100.0%;">1929년생으로 체계적인 전승계보를 갖고 있지는 않으나, 어릴 적부터 목조각을 취미삼아 스스로 반복 숙련하였고, 1958년 이래 주로 목제탈 제작분야에 종사해오면서 기능을 한층 발전시켰을 뿐 아니라, 전국기능경기대회 심사위원, 동아일보 주최 공예전등을...</div>`)[0];
+                popup_aa55fad3bae036e3d7a57a85cf90dd52.setContent(html_510ed9b3ab7bdbfc5791b8443520667b);
+            
+        
+
+        marker_ed47aadc6001a976832354c9ce8e4230.bindPopup(popup_aa55fad3bae036e3d7a57a85cf90dd52)
+        ;
+
+        
+    
+    
+            marker_ed47aadc6001a976832354c9ce8e4230.bindTooltip(
+                `<div>
+                     목조각장 전기만
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60048e5f8c6dda080a2dcd8d5753ece9 = L.marker(
+                [36.1708665, 127.5824825],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_a2547674284df7d46797a7fea539d4f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_60048e5f8c6dda080a2dcd8d5753ece9.setIcon(icon_a2547674284df7d46797a7fea539d4f3);
+        
+    
+        var popup_5d439303e936fa205555c1d13cbfd05c = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_190660f3f0376ed86152fe9aee2a8e3c = $(`<div id="html_190660f3f0376ed86152fe9aee2a8e3c" style="width: 100.0%; height: 100.0%;">신안사는 금산군 제원면 동북쪽에 있는 신음산(神陰山) 자락에 위치한 사찰로, 주변에 국사봉과 연신봉 등 여러 산봉우리가 마치 연꽃이 만개한 형국을 이루고 있어 연화도량(蓮花道場)으로 알려져 있다. 신라 진평왕 5년(583)에 무염선사(無染禪師)가 창건...</div>`)[0];
+                popup_5d439303e936fa205555c1d13cbfd05c.setContent(html_190660f3f0376ed86152fe9aee2a8e3c);
+            
+        
+
+        marker_60048e5f8c6dda080a2dcd8d5753ece9.bindPopup(popup_5d439303e936fa205555c1d13cbfd05c)
+        ;
+
+        
+    
+    
+            marker_60048e5f8c6dda080a2dcd8d5753ece9.bindTooltip(
+                `<div>
+                     신안사 대광전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_537de8ae64a8e7f5e60e9f5b5f28d752 = L.marker(
+                [36.112059, 127.5683743],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_3ddec74b55bb8e3c017c280ae8ec70e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_537de8ae64a8e7f5e60e9f5b5f28d752.setIcon(icon_3ddec74b55bb8e3c017c280ae8ec70e8);
+        
+    
+        var popup_4cd32a476ab096e6a413f406ce1d3ab7 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_23528b2d2d074989662e020bd5790968 = $(`<div id="html_23528b2d2d074989662e020bd5790968" style="width: 100.0%; height: 100.0%;">용과 호랑이 모습을 각각 2기(基)의 돌에 새긴 것이다. 천내리의 서쪽을 흐르는 천내강변 제원대교(濟原大橋)에서 북쪽 100m 지점에 용석(龍石)이, 그로부터 다시 북쪽으로 500m 지점에 호석(虎石)이 위치하고 있다. 용석은 소용돌이 모양으로 된 여...</div>`)[0];
+                popup_4cd32a476ab096e6a413f406ce1d3ab7.setContent(html_23528b2d2d074989662e020bd5790968);
+            
+        
+
+        marker_537de8ae64a8e7f5e60e9f5b5f28d752.bindPopup(popup_4cd32a476ab096e6a413f406ce1d3ab7)
+        ;
+
+        
+    
+    
+            marker_537de8ae64a8e7f5e60e9f5b5f28d752.bindTooltip(
+                `<div>
+                     금산 천내리 용호석
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b04a503733e5f064bd783e17dc660af = L.marker(
+                [36.1708665, 127.5824825],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_e207835c17c0441bed345290fdc0c7b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9b04a503733e5f064bd783e17dc660af.setIcon(icon_e207835c17c0441bed345290fdc0c7b9);
+        
+    
+        var popup_441986ba6d9a3d8bf14af8282def8942 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_49a0c82e2d5b2f8c49a9bd5540ba531c = $(`<div id="html_49a0c82e2d5b2f8c49a9bd5540ba531c" style="width: 100.0%; height: 100.0%;">제원면의 북쪽 면계를 이루고 있는 국사봉 남록에 있는 신안사의 부속건물이다. 대광전의 남서쪽에 남향하고 있는 극락전은 자연석의 기단 위에 덤벙주초석을 놓아 정면 3칸, 측면 3칸의 구조를 갖고 있다. 정면에 모두 4분합문(分閤門)을 달았고 내부의 바닥...</div>`)[0];
+                popup_441986ba6d9a3d8bf14af8282def8942.setContent(html_49a0c82e2d5b2f8c49a9bd5540ba531c);
+            
+        
+
+        marker_9b04a503733e5f064bd783e17dc660af.bindPopup(popup_441986ba6d9a3d8bf14af8282def8942)
+        ;
+
+        
+    
+    
+            marker_9b04a503733e5f064bd783e17dc660af.bindTooltip(
+                `<div>
+                     신안사 극락전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c9d981ae5d310bcda6374a433703ce4 = L.marker(
+                [36.1708665, 127.5824825],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_7ea9c46e48c6e53c2c8ca556d49aed99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8c9d981ae5d310bcda6374a433703ce4.setIcon(icon_7ea9c46e48c6e53c2c8ca556d49aed99);
+        
+    
+        var popup_c5f647fa3b8a6b18b7f8c5eeceeceb5b = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_feda877e2018f5d94f50caed355c8619 = $(`<div id="html_feda877e2018f5d94f50caed355c8619" style="width: 100.0%; height: 100.0%;">본존불 좌우에 합장한 관음보살과 지장보살을 협시보살로 배치한 형태이다. 전체 크기가 장대하고 위엄있는 모습의 삼존불로 조각 또한 매우 훌륭하다. 제작기법면에서 나무로 틀을짜고 흙과 삼베를 입히고 개금을 한 전형적인조선시대 불상기법을 보여주는 작품이다....</div>`)[0];
+                popup_c5f647fa3b8a6b18b7f8c5eeceeceb5b.setContent(html_feda877e2018f5d94f50caed355c8619);
+            
+        
+
+        marker_8c9d981ae5d310bcda6374a433703ce4.bindPopup(popup_c5f647fa3b8a6b18b7f8c5eeceeceb5b)
+        ;
+
+        
+    
+    
+            marker_8c9d981ae5d310bcda6374a433703ce4.bindTooltip(
+                `<div>
+                     금산 신안사 아미타삼존불상
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67142b02fcb99c203e79ade5492d2fc9 = L.marker(
+                [36.2036031, 127.4625558],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_5bac0e70289ad3ee089777273e4e3c51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_67142b02fcb99c203e79ade5492d2fc9.setIcon(icon_5bac0e70289ad3ee089777273e4e3c51);
+        
+    
+        var popup_2862f45a18309a5b5c3c90630f699f13 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_d87978bfef71d03c26fb5342a4da729d = $(`<div id="html_d87978bfef71d03c26fb5342a4da729d" style="width: 100.0%; height: 100.0%;">태실은 왕실의 태(胎)를 묻은 석실(石室)이다. 이 태실은 만인산의산봉우리 아래에 있었으나, 지금은 태봉(胎封) 터널 위 산봉우리에 조성되어 있다. 전하는 말에 의하면 고려말 조선초에 한 시인이 전국의 명산대천(名山大川)과 명승고적(名勝古蹟)을 두루 ...</div>`)[0];
+                popup_2862f45a18309a5b5c3c90630f699f13.setContent(html_d87978bfef71d03c26fb5342a4da729d);
+            
+        
+
+        marker_67142b02fcb99c203e79ade5492d2fc9.bindPopup(popup_2862f45a18309a5b5c3c90630f699f13)
+        ;
+
+        
+    
+    
+            marker_67142b02fcb99c203e79ade5492d2fc9.bindTooltip(
+                `<div>
+                     태조대왕태실
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff85aab72b37b7533aad9f60e28d318f = L.marker(
+                [36.0542737, 127.4759457],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_3e46144ef0de75e2e9d2fc73993e5f37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff85aab72b37b7533aad9f60e28d318f.setIcon(icon_3e46144ef0de75e2e9d2fc73993e5f37);
+        
+    
+        var popup_80a3addb13b69d85948fe7a29029c9ae = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_ddf69803642b1224f9e30af75135c789 = $(`<div id="html_ddf69803642b1224f9e30af75135c789" style="width: 100.0%; height: 100.0%;">7벌대로 높게 자연석 기단을 마련하고 그 위에 덤벙주초석을 두고 배흘림기둥을 세웠다. 다포식(多包式) 건물로 기둥 사이에 주간포(柱間包)를 1구식두었다.공포는 내외 3출목(出目)으로 짰는데 내부로는 살미첨차의 양측면을 한몸으로 형성하여 파련초각(波蓮草...</div>`)[0];
+                popup_80a3addb13b69d85948fe7a29029c9ae.setContent(html_ddf69803642b1224f9e30af75135c789);
+            
+        
+
+        marker_ff85aab72b37b7533aad9f60e28d318f.bindPopup(popup_80a3addb13b69d85948fe7a29029c9ae)
+        ;
+
+        
+    
+    
+            marker_ff85aab72b37b7533aad9f60e28d318f.bindTooltip(
+                `<div>
+                     보석사 대웅전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5c6ec466cd48adb1d2ad16e684ea7c5 = L.marker(
+                [36.1018769, 127.4627845],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_6d62fced00ef5623cbbba8ed5d18ae6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a5c6ec466cd48adb1d2ad16e684ea7c5.setIcon(icon_6d62fced00ef5623cbbba8ed5d18ae6a);
+        
+    
+        var popup_713b1a6d634bc91b64d06f7f80799922 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_d4ea6e8b32f3279b4c017c9474bade13 = $(`<div id="html_d4ea6e8b32f3279b4c017c9474bade13" style="width: 100.0%; height: 100.0%;">이 나무는 금산읍 양지리 장동이 마을 노인회관 옆에 있다. 금산 양지리 팽나무연리목 2주는 나이가 약 150년 정도로 추정되며, 높이는 10m, 가슴높이 둘레는굵은 줄기 1.74m, 가는 줄기 1.44m이다.연리목(連理木)은 나무와 나무가 맞닿아 한 ...</div>`)[0];
+                popup_713b1a6d634bc91b64d06f7f80799922.setContent(html_d4ea6e8b32f3279b4c017c9474bade13);
+            
+        
+
+        marker_a5c6ec466cd48adb1d2ad16e684ea7c5.bindPopup(popup_713b1a6d634bc91b64d06f7f80799922)
+        ;
+
+        
+    
+    
+            marker_a5c6ec466cd48adb1d2ad16e684ea7c5.bindTooltip(
+                `<div>
+                     금산 양지리 팽나무연리목
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce2f86128a9964820cb0ffe23f195035 = L.marker(
+                [36.0634322, 127.387526],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_7f991b513452a3a16d122e02fd0583da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce2f86128a9964820cb0ffe23f195035.setIcon(icon_7f991b513452a3a16d122e02fd0583da);
+        
+    
+        var popup_e646bd0ffbdf2e1d1c0345d27c1b5998 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_eab29e2608b5b12431737600ca2f86a9 = $(`<div id="html_eab29e2608b5b12431737600ca2f86a9" style="width: 100.0%; height: 100.0%;">백령성은 남이면 건천리와 역평리 선치산(해발759m) 동쪽의 정상부에 쌓은 석성으로, 금산군 제원면과 추부면을 지나 충북 영동과 옥천으로 연결되는 전략적 요충지에 위치하고 있다. 형태는 산 정상 부분을 둘러쌓은 테뫼식이며, 성의 둘레는 207m이다.성...</div>`)[0];
+                popup_e646bd0ffbdf2e1d1c0345d27c1b5998.setContent(html_eab29e2608b5b12431737600ca2f86a9);
+            
+        
+
+        marker_ce2f86128a9964820cb0ffe23f195035.bindPopup(popup_e646bd0ffbdf2e1d1c0345d27c1b5998)
+        ;
+
+        
+    
+    
+            marker_ce2f86128a9964820cb0ffe23f195035.bindTooltip(
+                `<div>
+                     금산 백령성
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8e15dfea0798dec815b9f84ed2e4917 = L.marker(
+                [36.1108341, 127.489981],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_04e3252c2f61ddc92e7693ec5b283cff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f8e15dfea0798dec815b9f84ed2e4917.setIcon(icon_04e3252c2f61ddc92e7693ec5b283cff);
+        
+    
+        var popup_1f5e46045a720cd7eb5b864fff3d5694 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_78fb5184c341a66b7f54fb8f85d2383f = $(`<div id="html_78fb5184c341a66b7f54fb8f85d2383f" style="width: 100.0%; height: 100.0%;">향교는 조선시대의 관립교육기관이자 선현(先賢)을 향사(享祀)하는 곳으로,고을마다 건립되었다. 금산향교는 원래조선 초기에 금산읍 하옥리 백학동에창건되었으나, 임진왜란 후에 다시 세워진 것으로 전해진다. 1684년(숙종10년)에 향교를 현재의 위치로 옮겨...</div>`)[0];
+                popup_1f5e46045a720cd7eb5b864fff3d5694.setContent(html_78fb5184c341a66b7f54fb8f85d2383f);
+            
+        
+
+        marker_f8e15dfea0798dec815b9f84ed2e4917.bindPopup(popup_1f5e46045a720cd7eb5b864fff3d5694)
+        ;
+
+        
+    
+    
+            marker_f8e15dfea0798dec815b9f84ed2e4917.bindTooltip(
+                `<div>
+                     금산향교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0155d62371284d1fb1e87fb295cee4ca = L.marker(
+                [36.1543867, 127.3768239],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_2aededd108b938b22246b3511fa103f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0155d62371284d1fb1e87fb295cee4ca.setIcon(icon_2aededd108b938b22246b3511fa103f9);
+        
+    
+        var popup_98952d8b5b963656a9e3dbc61d27a622 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_24dbae209877e2d2cbe9278df3a893c7 = $(`<div id="html_24dbae209877e2d2cbe9278df3a893c7" style="width: 100.0%; height: 100.0%;">향교는 조선시대의 국립 교육기관이자 선현(先賢)을 향사(享祀)하는 곳으로, 고을마다건립되었다. 진산향교는 원래 조선 초에 진산면 읍내리 606번지(현재의 진산중학교자리)에 창건되었으나, 임진왜란 때 불탄 후 보수되었던 것으로 전해진다. 1755년(영조...</div>`)[0];
+                popup_98952d8b5b963656a9e3dbc61d27a622.setContent(html_24dbae209877e2d2cbe9278df3a893c7);
+            
+        
+
+        marker_0155d62371284d1fb1e87fb295cee4ca.bindPopup(popup_98952d8b5b963656a9e3dbc61d27a622)
+        ;
+
+        
+    
+    
+            marker_0155d62371284d1fb1e87fb295cee4ca.bindTooltip(
+                `<div>
+                     진산향교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_075c2afa6b2bcc7ad888330eba02527c = L.marker(
+                [36.138914, 127.3643151],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_aead999bc587db17704a9a0b8fef11be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_075c2afa6b2bcc7ad888330eba02527c.setIcon(icon_aead999bc587db17704a9a0b8fef11be);
+        
+    
+        var popup_86bc3c69f7650a16f21c6a35584a1dce = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_0bc7fc61bc49fa6a167995c5f1456a01 = $(`<div id="html_0bc7fc61bc49fa6a167995c5f1456a01" style="width: 100.0%; height: 100.0%;">이치(梨峙)는 대둔산 중허리를 넘어 전북 완주군으로 통하는 교통의 요지이며 전략상 중요한 곳이다. 1592년 임진왜란 당시경상도와 충청도 일대를 휩쓸고 승승장구하던 1만여 병력의 일본군이 호남으로 나아가 군량미를 얻고자 이곳을 넘으려고 하였다. 이 때...</div>`)[0];
+                popup_86bc3c69f7650a16f21c6a35584a1dce.setContent(html_0bc7fc61bc49fa6a167995c5f1456a01);
+            
+        
+
+        marker_075c2afa6b2bcc7ad888330eba02527c.bindPopup(popup_86bc3c69f7650a16f21c6a35584a1dce)
+        ;
+
+        
+    
+    
+            marker_075c2afa6b2bcc7ad888330eba02527c.bindTooltip(
+                `<div>
+                     금산 이치대첩지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbe647df3e0d0785f0a0d72d6a429e57 = L.marker(
+                [36.0763465, 127.5605822],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_4f2e7ecef88b1268ca9ceb161ec2d6f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_bbe647df3e0d0785f0a0d72d6a429e57.setIcon(icon_4f2e7ecef88b1268ca9ceb161ec2d6f9);
+        
+    
+        var popup_3c0edf8aefbc2675025c121414ce0803 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_1f6877eaaabae82479b94578fd3fe3ea = $(`<div id="html_1f6877eaaabae82479b94578fd3fe3ea" style="width: 100.0%; height: 100.0%;">평촌리 물페기(일명 水村) 마을 일대에서 약 200년 전부터 전해오는 농요로, 농사의 처음부터 끝까지의 과정을 노래와 동작으로 표현한것이다. 충남에서는 드물게 전승(傳承)되어 오는 농사에 관계된 소리인데, 평야지대와 산악지대의 소리가 결합된 독특한 구...</div>`)[0];
+                popup_3c0edf8aefbc2675025c121414ce0803.setContent(html_1f6877eaaabae82479b94578fd3fe3ea);
+            
+        
+
+        marker_bbe647df3e0d0785f0a0d72d6a429e57.bindPopup(popup_3c0edf8aefbc2675025c121414ce0803)
+        ;
+
+        
+    
+    
+            marker_bbe647df3e0d0785f0a0d72d6a429e57.bindTooltip(
+                `<div>
+                     금산 물페기농요
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91922adf0ea55c5ad4627aa5d33fc1cf = L.marker(
+                [36.074957, 127.5656501],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_c10dfe5276e932739e113131b814ba7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_91922adf0ea55c5ad4627aa5d33fc1cf.setIcon(icon_c10dfe5276e932739e113131b814ba7d);
+        
+    
+        var popup_74a19281571207451b13a40e7ca066d0 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_6548ba34a990c780d18aa2fe9a3f0347 = $(`<div id="html_6548ba34a990c780d18aa2fe9a3f0347" style="width: 100.0%; height: 100.0%;">금강변 어재리 느재마을을 중심으로 인근 마을과 제원면(濟原面) 일대에서 치러지는 기우제이다. 농바우끄시기는 농(籠)바위끌기라는 뜻으로, 농바우는 느재마을에서 동남쪽 약 350m 떨어진 시루봉 중턱에 있는 바위로, 그 모습이 반닫이 농을 뒤집어 놓은 것...</div>`)[0];
+                popup_74a19281571207451b13a40e7ca066d0.setContent(html_6548ba34a990c780d18aa2fe9a3f0347);
+            
+        
+
+        marker_91922adf0ea55c5ad4627aa5d33fc1cf.bindPopup(popup_74a19281571207451b13a40e7ca066d0)
+        ;
+
+        
+    
+    
+            marker_91922adf0ea55c5ad4627aa5d33fc1cf.bindTooltip(
+                `<div>
+                     금산 농바우끄시기
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82f8840f95c6396b0882b89ad767c087 = L.marker(
+                [36.1279716, 127.4664626],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_03d42a13e32220b4a72b9d417ddf9de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_82f8840f95c6396b0882b89ad767c087.setIcon(icon_03d42a13e32220b4a72b9d417ddf9de8);
+        
+    
+        var popup_2ce2d694d179f0da91d6c30aa7d83fa4 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_4ca2cd8cefa6bc4f3868c9ce7ffc36eb = $(`<div id="html_4ca2cd8cefa6bc4f3868c9ce7ffc36eb" style="width: 100.0%; height: 100.0%;">금산 인삼백주는 금산의 김녕 김씨(金寧金氏) 집안에 전해오는 전통적인 술 제조법이다. 술을 만드는 방법은 김씨 문중에 전해오는『잡록(雜錄)』에 기록되어 있다. 이에 의하면 잘게 부순 통밀과 인삼을 섞어 3개월간 발효시켜 누룩을 만든다. 쌀로 고두밥을 ...</div>`)[0];
+                popup_2ce2d694d179f0da91d6c30aa7d83fa4.setContent(html_4ca2cd8cefa6bc4f3868c9ce7ffc36eb);
+            
+        
+
+        marker_82f8840f95c6396b0882b89ad767c087.bindPopup(popup_2ce2d694d179f0da91d6c30aa7d83fa4)
+        ;
+
+        
+    
+    
+            marker_82f8840f95c6396b0882b89ad767c087.bindTooltip(
+                `<div>
+                     금산인삼백주
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1af614c9a7fa1aa21a8dafc6cc4348be = L.marker(
+                [36.2487711, 127.3843153],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_57861509655681eb7a1237ff7bc009bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1af614c9a7fa1aa21a8dafc6cc4348be.setIcon(icon_57861509655681eb7a1237ff7bc009bd);
+        
+    
+        var popup_678ef601d4f340b64773fd25d9fe9e74 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_1c1fa6029cbbe73006d82fd708bd0d8d = $(`<div id="html_1c1fa6029cbbe73006d82fd708bd0d8d" style="width: 100.0%; height: 100.0%;">미륵사 뒤편 암벽에 선각으로 옷주름을 새긴 뒤 그 위에 불두를 얹은 마애불이 있고 그 앞에는 깨져 일부만 남아 있는 석조삼존불입상이 위치한다. 삼존불은 본존불의 몸체 일부와 좌협시보살상의 일부가 큰 암벽에 얕게 선각되어 남아 있으며 그 주위에는 선각된...</div>`)[0];
+                popup_678ef601d4f340b64773fd25d9fe9e74.setContent(html_1c1fa6029cbbe73006d82fd708bd0d8d);
+            
+        
+
+        marker_1af614c9a7fa1aa21a8dafc6cc4348be.bindPopup(popup_678ef601d4f340b64773fd25d9fe9e74)
+        ;
+
+        
+    
+    
+            marker_1af614c9a7fa1aa21a8dafc6cc4348be.bindTooltip(
+                `<div>
+                     금산 미륵사 석조불두 및 마애불편 일괄
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f74bf667d1419be47baf51b3deba7f35 = L.marker(
+                [36.0542737, 127.4759457],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_b3f1456882c2406cfa34b1bbed6b251d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f74bf667d1419be47baf51b3deba7f35.setIcon(icon_b3f1456882c2406cfa34b1bbed6b251d);
+        
+    
+        var popup_f96f56ae6d27ab16cc03d59a56e71c24 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_247722fbde924767f5d82e0f3856c55f = $(`<div id="html_247722fbde924767f5d82e0f3856c55f" style="width: 100.0%; height: 100.0%;">삼존좌상 모두 둥글넓적한 얼굴, 반듯한 코에 반개한 눈과 입매가 살짝 올라간 입술 등이 조화를 이룬 단정한 인상을 하고 있으며, 어깨가 폭이 넓고 허리가 길며, 무릎 폭이 넓어 전체적으로 균형있고 안정감이 있다. 석가불은 변형우견편단을 입고, 항마촉지...</div>`)[0];
+                popup_f96f56ae6d27ab16cc03d59a56e71c24.setContent(html_247722fbde924767f5d82e0f3856c55f);
+            
+        
+
+        marker_f74bf667d1419be47baf51b3deba7f35.bindPopup(popup_f96f56ae6d27ab16cc03d59a56e71c24)
+        ;
+
+        
+    
+    
+            marker_f74bf667d1419be47baf51b3deba7f35.bindTooltip(
+                `<div>
+                     금산 보석사 목조석가여래삼존좌상
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_118528293befda60450924221e462e19 = L.marker(
+                [36.1190235, 127.4782791],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_22c02f5a46e57aec9e5529087ea2c0a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_118528293befda60450924221e462e19.setIcon(icon_22c02f5a46e57aec9e5529087ea2c0a7);
+        
+    
+        var popup_37fc03e0f18bb4f5ff36cab1c281a989 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_a8a20f89c1a1d6a4beace6a735d6659d = $(`<div id="html_a8a20f89c1a1d6a4beace6a735d6659d" style="width: 100.0%; height: 100.0%;">금산농악은 마을굿과 걸립굿의 요소를 함께 갖추고 있다 판굿의 각 과정이 모두 독자적이면서 장단이 내고 푸는 기승전결의 완결적 구조를 가지고 있다. 판굿은 앞굿과 뒷굿으로 나누어지는데 앞굿은 악기와 개인놀이가 중심이며 뒷굿은 잡색들의 춤사위 위주로 구성...</div>`)[0];
+                popup_37fc03e0f18bb4f5ff36cab1c281a989.setContent(html_a8a20f89c1a1d6a4beace6a735d6659d);
+            
+        
+
+        marker_118528293befda60450924221e462e19.bindPopup(popup_37fc03e0f18bb4f5ff36cab1c281a989)
+        ;
+
+        
+    
+    
+            marker_118528293befda60450924221e462e19.bindTooltip(
+                `<div>
+                     금산농악
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_843cd83f43c6859f5b471ac4d05725a1 = L.marker(
+                [36.0635639, 127.547224],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_f3013d1d42903ad2abec8fc9d16558f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_843cd83f43c6859f5b471ac4d05725a1.setIcon(icon_f3013d1d42903ad2abec8fc9d16558f4);
+        
+    
+        var popup_d4183cbc3e03d3a09a99c5d689f9ebbd = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_4576c1d80e6f9eb0871fb914a89ba43c = $(`<div id="html_4576c1d80e6f9eb0871fb914a89ba43c" style="width: 100.0%; height: 100.0%;">고려말 삼은(三隱)의 한 분인 야은 길재(冶隱吉再) 선생의 영정(影幀)과 위패(位牌)를모신 사우로 정면 3칸, 측면 2칸의 목조건물이다. 1761년(영조 37년) 금산군수로 부임한 민백흥(閔百興)이 유림의 요청에 의하여 건축하였고, 마을 이름도 선생의...</div>`)[0];
+                popup_d4183cbc3e03d3a09a99c5d689f9ebbd.setContent(html_4576c1d80e6f9eb0871fb914a89ba43c);
+            
+        
+
+        marker_843cd83f43c6859f5b471ac4d05725a1.bindPopup(popup_d4183cbc3e03d3a09a99c5d689f9ebbd)
+        ;
+
+        
+    
+    
+            marker_843cd83f43c6859f5b471ac4d05725a1.bindTooltip(
+                `<div>
+                     청풍사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3933b4aea6f698f0a67e68ca77cc0140 = L.marker(
+                [36.13039, 127.4562623],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_4c62e923006f7aaf9673455c81095c5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3933b4aea6f698f0a67e68ca77cc0140.setIcon(icon_4c62e923006f7aaf9673455c81095c5a);
+        
+    
+        var popup_fea08288623b98e500f607e6038a41c0 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_8905c37cc0dfd7d64e2fa9d1aeb11304 = $(`<div id="html_8905c37cc0dfd7d64e2fa9d1aeb11304" style="width: 100.0%; height: 100.0%;">해주 오씨(海州吳氏)의 삼세(三世)에 걸친 4명의 충신(忠臣)인 완월당 오응정(翫月堂吳應鼎)과 큰 아들 욱(稶), 둘째 아들 삼송정 직(三松亭稷),손자 방언(邦彦)의 충혼을 모신 정면 3칸, 측면 2칸의 목조건물로 1831년(순조 31년)에 세워졌다....</div>`)[0];
+                popup_fea08288623b98e500f607e6038a41c0.setContent(html_8905c37cc0dfd7d64e2fa9d1aeb11304);
+            
+        
+
+        marker_3933b4aea6f698f0a67e68ca77cc0140.bindPopup(popup_fea08288623b98e500f607e6038a41c0)
+        ;
+
+        
+    
+    
+            marker_3933b4aea6f698f0a67e68ca77cc0140.bindTooltip(
+                `<div>
+                     금산 충렬사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96cdf162580f5cb34d9f0481e1cf1511 = L.marker(
+                [36.0992324, 127.5886274],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_ab51b6dfcd06a30b93cc88adaf31f4e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_96cdf162580f5cb34d9f0481e1cf1511.setIcon(icon_ab51b6dfcd06a30b93cc88adaf31f4e0);
+        
+    
+        var popup_e77bae4a9977990e36bf1944823628a3 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_d2e8604bfa146b60a09835635062abdd = $(`<div id="html_d2e8604bfa146b60a09835635062abdd" style="width: 100.0%; height: 100.0%;">서원은 후진교육(後進敎育)과 선현봉사(先賢奉祀)를 목적으로 16세기부터 건립되기 시작하여, 조선후기에는 향촌사림(鄕村士林)의 세력결집 장소의 기능까지 갖게 되었다. 이 서원은 1716년(숙종 42년)에 금강 상류인 용강(龍江) 가에 창건되었다. 창건 ...</div>`)[0];
+                popup_e77bae4a9977990e36bf1944823628a3.setContent(html_d2e8604bfa146b60a09835635062abdd);
+            
+        
+
+        marker_96cdf162580f5cb34d9f0481e1cf1511.bindPopup(popup_e77bae4a9977990e36bf1944823628a3)
+        ;
+
+        
+    
+    
+            marker_96cdf162580f5cb34d9f0481e1cf1511.bindTooltip(
+                `<div>
+                     용강서원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b35ac227e503e2fdff5f8de47bb9bff = L.marker(
+                [36.163936, 127.3948821],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_ef2935c93efe7410cca8726cd999d241 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5b35ac227e503e2fdff5f8de47bb9bff.setIcon(icon_ef2935c93efe7410cca8726cd999d241);
+        
+    
+        var popup_0923874b12858b1db70768b15fa7c87b = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_c5236e8bb8bd4a82bdd3ee49495abbef = $(`<div id="html_c5236e8bb8bd4a82bdd3ee49495abbef" style="width: 100.0%; height: 100.0%;">임진왜란 당시 금산성전투에서 순절한 중봉 조헌(重峰趙憲) 선생을 모신 부조사우이다. 부조사우란 나라에 큰 공훈이 있는 사람의 신주(神主)를 영구히 모시도록 조정(朝廷)에서 지정한 부조묘이다. 임진왜란 이전에 선생은 주로 옥천군 안읍 밤티(沃川郡安邑栗峙...</div>`)[0];
+                popup_0923874b12858b1db70768b15fa7c87b.setContent(html_c5236e8bb8bd4a82bdd3ee49495abbef);
+            
+        
+
+        marker_5b35ac227e503e2fdff5f8de47bb9bff.bindPopup(popup_0923874b12858b1db70768b15fa7c87b)
+        ;
+
+        
+    
+    
+            marker_5b35ac227e503e2fdff5f8de47bb9bff.bindTooltip(
+                `<div>
+                     조헌사당
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67c8e89ff811f8cfb675ca91b10f208c = L.marker(
+                [36.1593572, 127.483246],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_346bb0f921f969da3ec53efa5979ce66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_67c8e89ff811f8cfb675ca91b10f208c.setIcon(icon_346bb0f921f969da3ec53efa5979ce66);
+        
+    
+        var popup_4d3ee4f79554f7e2a65d0a3db368f22a = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_6b2fa61a0f88bb81c35bfe4ee8a4efd2 = $(`<div id="html_6b2fa61a0f88bb81c35bfe4ee8a4efd2" style="width: 100.0%; height: 100.0%;">온양 이씨(溫陽李氏) 문중의 5세3효(五世三孝)의 효행이 순종 황제에까지 알려지면서 어필(御筆)을 내려받자,유림과 후손들이 어필비(御筆碑)와 함께 세운 목조 8각의 건물이다. 5세3효는 5세에 걸친 3명의 효자, 즉 이태귀(李泰貴)와 그의 증손(曾孫)...</div>`)[0];
+                popup_4d3ee4f79554f7e2a65d0a3db368f22a.setContent(html_6b2fa61a0f88bb81c35bfe4ee8a4efd2);
+            
+        
+
+        marker_67c8e89ff811f8cfb675ca91b10f208c.bindPopup(popup_4d3ee4f79554f7e2a65d0a3db368f22a)
+        ;
+
+        
+    
+    
+            marker_67c8e89ff811f8cfb675ca91b10f208c.bindTooltip(
+                `<div>
+                     온양이씨 어필각
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20bc990f9ff138e0e6ffd278f67f7a62 = L.marker(
+                [36.0521997, 127.4761546],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_44ce0be58f7ae8faf2aa315a2ef8751a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_20bc990f9ff138e0e6ffd278f67f7a62.setIcon(icon_44ce0be58f7ae8faf2aa315a2ef8751a);
+        
+    
+        var popup_f1cfabac116ef701eff67f5f8231d1ee = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_6d61758d02f4188b467df86fd9f40e45 = $(`<div id="html_6d61758d02f4188b467df86fd9f40e45" style="width: 100.0%; height: 100.0%;">의병승장(義兵僧將)으로 금산전투에서 중봉 조헌(重峰趙憲)과 함께 순절한 기허당 영규대사(騎虛堂靈圭大師)의순절사적비(殉節史蹟碑)로서 1840년(헌종 6년)에 보석사(寶石寺) 입구에 건립되었다. 비문을 지은이는 우의정 조인영(趙寅永)이며, 금산군수 조취영...</div>`)[0];
+                popup_f1cfabac116ef701eff67f5f8231d1ee.setContent(html_6d61758d02f4188b467df86fd9f40e45);
+            
+        
+
+        marker_20bc990f9ff138e0e6ffd278f67f7a62.bindPopup(popup_f1cfabac116ef701eff67f5f8231d1ee)
+        ;
+
+        
+    
+    
+            marker_20bc990f9ff138e0e6ffd278f67f7a62.bindTooltip(
+                `<div>
+                     의병승장비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdf0ad556c6cc7087e5997bae489edc5 = L.marker(
+                [36.1095531, 127.5664963],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_94ce82a19611202b24a3fc37136b0478 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bdf0ad556c6cc7087e5997bae489edc5.setIcon(icon_94ce82a19611202b24a3fc37136b0478);
+        
+    
+        var popup_e2f5ce4a02f3bbb08e1828411b892754 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_ba5db132c49ae1e8a52af065960a7ecf = $(`<div id="html_ba5db132c49ae1e8a52af065960a7ecf" style="width: 100.0%; height: 100.0%;">임진왜란 때 이곳 갯터싸움에서 금산군수 권종(權悰)이 순절한 곳임을 새긴 비(碑)이다.권율(權慄)의 사촌형인 금산군수 권종은 1592년 6월 24일 영동(永同)을 거쳐 금산으로 쳐들어오는일본군을 막기 위해, 제원찰방 이극경(濟原察訪李克絅)과 함께 갯터...</div>`)[0];
+                popup_e2f5ce4a02f3bbb08e1828411b892754.setContent(html_ba5db132c49ae1e8a52af065960a7ecf);
+            
+        
+
+        marker_bdf0ad556c6cc7087e5997bae489edc5.bindPopup(popup_e2f5ce4a02f3bbb08e1828411b892754)
+        ;
+
+        
+    
+    
+            marker_bdf0ad556c6cc7087e5997bae489edc5.bindTooltip(
+                `<div>
+                     권 충민공 순절비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_712303faaa99474d7439f6906453e4c0 = L.marker(
+                [36.138914, 127.3643151],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_bfd5a0ecb20bc4ea0c6f12654e0b019d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_712303faaa99474d7439f6906453e4c0.setIcon(icon_bfd5a0ecb20bc4ea0c6f12654e0b019d);
+        
+    
+        var popup_94112e3ec5fa5382dd5cfc3105bf4675 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_05097040994d16adf85a57c62670e755 = $(`<div id="html_05097040994d16adf85a57c62670e755" style="width: 100.0%; height: 100.0%;">임진왜란 당시 권율(權慄) 장군이 전라도를 침입하려던 일본군을 이치(梨峙, 배티 또는 배재)에서 물리친 사건을 새긴비석으로, 이 전투를 이치대첩(梨峙大捷)이라고 한다. 원래원수권공이치대첩비(元帥權公梨峙大捷碑)는 연재 송병선(淵齋宋秉璿)이 지은 비문을 ...</div>`)[0];
+                popup_94112e3ec5fa5382dd5cfc3105bf4675.setContent(html_05097040994d16adf85a57c62670e755);
+            
+        
+
+        marker_712303faaa99474d7439f6906453e4c0.bindPopup(popup_94112e3ec5fa5382dd5cfc3105bf4675)
+        ;
+
+        
+    
+    
+            marker_712303faaa99474d7439f6906453e4c0.bindTooltip(
+                `<div>
+                     권율 장군 이치대첩비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a81fdb42f820e7450b2351821fa1343b = L.marker(
+                [36.1637441, 127.3952243],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_9bf8745d08e6d2ab626f33d9ea676571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a81fdb42f820e7450b2351821fa1343b.setIcon(icon_9bf8745d08e6d2ab626f33d9ea676571);
+        
+    
+        var popup_fbc79a07d31c16ab5d1eefc88c2108e2 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_a74701de14dc60250332db89c00a59f0 = $(`<div id="html_a74701de14dc60250332db89c00a59f0" style="width: 100.0%; height: 100.0%;">복수면 곡남리 시냇물을 건너 송촌(松村)부락에 있는 유서 깊은 곳이다. 중봉, 조헌(重峰, 趙憲)이 우거하던 곳으로 암석으로 되어 있는 조그마한봉우리에 낙낙장송이 우거져 있고 그 밑에 수심대라는 글이 새겨져 있다. 이름은 중봉이 지은 것이며 우암 송시...</div>`)[0];
+                popup_fbc79a07d31c16ab5d1eefc88c2108e2.setContent(html_a74701de14dc60250332db89c00a59f0);
+            
+        
+
+        marker_a81fdb42f820e7450b2351821fa1343b.bindPopup(popup_fbc79a07d31c16ab5d1eefc88c2108e2)
+        ;
+
+        
+    
+    
+            marker_a81fdb42f820e7450b2351821fa1343b.bindTooltip(
+                `<div>
+                     수심대
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a09435e2ae112430ffd85abc46bf8048 = L.marker(
+                [36.1348859, 127.3259611],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_1c3dc065865c61c1cf32711590aaee79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a09435e2ae112430ffd85abc46bf8048.setIcon(icon_1c3dc065865c61c1cf32711590aaee79);
+        
+    
+        var popup_4efb9efcfab300bdf28375da63411896 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_f9a4ffd224c4ae8806c2c2d78c414e33 = $(`<div id="html_f9a4ffd224c4ae8806c2c2d78c414e33" style="width: 100.0%; height: 100.0%;">태고사는 빼어난 경치를 자랑하는 대둔산 낙조대(大屯山落照臺) 아래에 있는 사찰이다. 신라 신문왕 때 원효대사(元曉大師)가 창건하였고, 고려시대 태고화상(太古和尙)이 중창하였으며, 조선시대에는 진묵대사(震默大師)가 재건하였다고 알려져 있다. 이 절에서 ...</div>`)[0];
+                popup_4efb9efcfab300bdf28375da63411896.setContent(html_f9a4ffd224c4ae8806c2c2d78c414e33);
+            
+        
+
+        marker_a09435e2ae112430ffd85abc46bf8048.bindPopup(popup_4efb9efcfab300bdf28375da63411896)
+        ;
+
+        
+    
+    
+            marker_a09435e2ae112430ffd85abc46bf8048.bindTooltip(
+                `<div>
+                     태고사 대웅전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_610a892946cf322c932c04deeb372566 = L.marker(
+                [36.1229081, 127.4733065],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_f0d655114fac6c4aad28d241cc1ec84a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_610a892946cf322c932c04deeb372566.setIcon(icon_f0d655114fac6c4aad28d241cc1ec84a);
+        
+    
+        var popup_831a844a40799fc46bf0f11078a5fb2c = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_2964002448286f663ee0003ebaeb72a7 = $(`<div id="html_2964002448286f663ee0003ebaeb72a7" style="width: 100.0%; height: 100.0%;">임진왜란 때 제봉 고경명(霽峰高敬命)선생이 의병을 이끌고 일본군과 싸우다순절한 사실을 새긴 비이다. 선생은 1558년 (명종13년)에 문과에 장원한 후 중요한 직책을 두루 거쳐 동래부사에 이르렀는데, 서인(西人)이 몰락할 때벼슬을 버리고 고향으로 돌아...</div>`)[0];
+                popup_831a844a40799fc46bf0f11078a5fb2c.setContent(html_2964002448286f663ee0003ebaeb72a7);
+            
+        
+
+        marker_610a892946cf322c932c04deeb372566.bindPopup(popup_831a844a40799fc46bf0f11078a5fb2c)
+        ;
+
+        
+    
+    
+            marker_610a892946cf322c932c04deeb372566.bindTooltip(
+                `<div>
+                     고경명 선생 비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9200c3e332cdf2dcaa8eb0ac223bd65c = L.marker(
+                [36.0542737, 127.4759457],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_0cf77a6fad971a599957cd6935e221a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9200c3e332cdf2dcaa8eb0ac223bd65c.setIcon(icon_0cf77a6fad971a599957cd6935e221a9);
+        
+    
+        var popup_49a6b89653a8ba27e7a8b3d94322a280 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_3270af3302d5cc576640c90f9187770f = $(`<div id="html_3270af3302d5cc576640c90f9187770f" style="width: 100.0%; height: 100.0%;">의병승장(義兵僧將) 영규대사(靈圭大師)가 머물던곳으로, 보석사 대웅전(寶石寺大雄殿)의 왼쪽 옆에있는 건물이다. 대사는 공주 계룡면 출신으로 계룡산(鷄龍山) 갑사(甲寺)와 보석사를 왕래하면서 수도(修道) 생활을 하였다. 임진왜란이 일어나자 승병을 모집하...</div>`)[0];
+                popup_49a6b89653a8ba27e7a8b3d94322a280.setContent(html_3270af3302d5cc576640c90f9187770f);
+            
+        
+
+        marker_9200c3e332cdf2dcaa8eb0ac223bd65c.bindPopup(popup_49a6b89653a8ba27e7a8b3d94322a280)
+        ;
+
+        
+    
+    
+            marker_9200c3e332cdf2dcaa8eb0ac223bd65c.bindTooltip(
+                `<div>
+                     의선각
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d1199d85bad8aad1ab8a5c542d08f2e = L.marker(
+                [36.0599841, 127.5416221],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_9ffe11bbbb24740781d06536829715a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4d1199d85bad8aad1ab8a5c542d08f2e.setIcon(icon_9ffe11bbbb24740781d06536829715a7);
+        
+    
+        var popup_6eb7cae89e2f1d6fbb8fe7e378c7a3f1 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_bba1f22dec06af2bfa078de9a9918efb = $(`<div id="html_bba1f22dec06af2bfa078de9a9918efb" style="width: 100.0%; height: 100.0%;">밀양 박씨(密陽朴氏) 눌재 박증영(訥齋朴增榮), 강수 박훈, 퇴우당 박사현(退憂堂朴嗣賢) 세 분의 위패를 모신 사우(祠宇)이다. 눌재는 예종과 성종때의 문신으로 문물과 제도의 정비에 공로가 컸고, 아들 강수는 중종 때 기묘사화(己卯士禍)에 화(禍)를 ...</div>`)[0];
+                popup_6eb7cae89e2f1d6fbb8fe7e378c7a3f1.setContent(html_bba1f22dec06af2bfa078de9a9918efb);
+            
+        
+
+        marker_4d1199d85bad8aad1ab8a5c542d08f2e.bindPopup(popup_6eb7cae89e2f1d6fbb8fe7e378c7a3f1)
+        ;
+
+        
+    
+    
+            marker_4d1199d85bad8aad1ab8a5c542d08f2e.bindTooltip(
+                `<div>
+                     덕산사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5706914a92790be05c736f9ab9220ffc = L.marker(
+                [36.0749226, 127.5669128],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_abbdd953f88b6abb7ff231fae42fbe08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_5706914a92790be05c736f9ab9220ffc.setIcon(icon_abbdd953f88b6abb7ff231fae42fbe08);
+        
+    
+        var popup_66f8765ec5660c918d2cf7a6d49d2259 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_427c57e4b464fb4943fb132bfde0accd = $(`<div id="html_427c57e4b464fb4943fb132bfde0accd" style="width: 100.0%; height: 100.0%;">남원 양씨(南原 梁氏) 문양공 눌재 양성지(文襄公 訥齋 梁誠之) 선생을 배향한 사우로서, 평촌리 귀래봉(歸來峰) 아래에 위치하고 있다. 눌재 선생은 조선 초기의 학자이며 문신으로세종 때부터 성종 때까지 5대 40여 년간에 걸쳐 벼슬하며 집현전 학사, ...</div>`)[0];
+                popup_66f8765ec5660c918d2cf7a6d49d2259.setContent(html_427c57e4b464fb4943fb132bfde0accd);
+            
+        
+
+        marker_5706914a92790be05c736f9ab9220ffc.bindPopup(popup_66f8765ec5660c918d2cf7a6d49d2259)
+        ;
+
+        
+    
+    
+            marker_5706914a92790be05c736f9ab9220ffc.bindTooltip(
+                `<div>
+                     귀암사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31d0ecdb5be3954275bfa2a9aa2bfc1a = L.marker(
+                [36.1049672, 127.4811284],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_e5f29a2cadb865f14b54c2b9acbb9502 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31d0ecdb5be3954275bfa2a9aa2bfc1a.setIcon(icon_e5f29a2cadb865f14b54c2b9acbb9502);
+        
+    
+        var popup_8d4833f22bfbb20cd19402fc0fc82550 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_f800b79b8806b0a583d47c504bbe8b8f = $(`<div id="html_f800b79b8806b0a583d47c504bbe8b8f" style="width: 100.0%; height: 100.0%;">탑은 석가모니(釋迦牟尼)의 사리(舍利)를 봉안할 목적으로 만든 건축물을 일컫지만, 넓게는 승려(僧侶)의 사리를봉안한 것도 포함된다. 이 탑은 금산읍 아인리 금산산업고등학교와 금산동중학교 사이에 있는 높이 200cm의 3층 석탑이다. 받침돌에 비해서 지...</div>`)[0];
+                popup_8d4833f22bfbb20cd19402fc0fc82550.setContent(html_f800b79b8806b0a583d47c504bbe8b8f);
+            
+        
+
+        marker_31d0ecdb5be3954275bfa2a9aa2bfc1a.bindPopup(popup_8d4833f22bfbb20cd19402fc0fc82550)
+        ;
+
+        
+    
+    
+            marker_31d0ecdb5be3954275bfa2a9aa2bfc1a.bindTooltip(
+                `<div>
+                     아인리 석탑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44a0f72f1d7191854185b60f8eeb57a2 = L.marker(
+                [36.1055927, 127.4978733],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_5432312c1be82fbf118f4ea9dcfacf62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44a0f72f1d7191854185b60f8eeb57a2.setIcon(icon_5432312c1be82fbf118f4ea9dcfacf62);
+        
+    
+        var popup_c66f24485c9eb59b7669b9f33e188045 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_0cefdfe407b75706ff6d9f39d4da7569 = $(`<div id="html_0cefdfe407b75706ff6d9f39d4da7569" style="width: 100.0%; height: 100.0%;">탑선리 석탑은 금산읍 중도리 탑선 마을에 있는 석탑으로, 탑 부근에 사찰(寺刹)이 있었을 것으로 추측되지만 고증할 수는 없다. 탑은 3층으로길이가 220cm정도이고, 탑의 규모에 비해 기단이 높은 편이며, 각층의 몸돌과 지붕돌이 약간 훼손된 상태이다....</div>`)[0];
+                popup_c66f24485c9eb59b7669b9f33e188045.setContent(html_0cefdfe407b75706ff6d9f39d4da7569);
+            
+        
+
+        marker_44a0f72f1d7191854185b60f8eeb57a2.bindPopup(popup_c66f24485c9eb59b7669b9f33e188045)
+        ;
+
+        
+    
+    
+            marker_44a0f72f1d7191854185b60f8eeb57a2.bindTooltip(
+                `<div>
+                     탑선리 석탑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03ccfa0e9480d7c496cff16cfebe2700 = L.marker(
+                [36.1109614, 127.5729137],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_7b128333d26f2054de29708a6fa88ab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_03ccfa0e9480d7c496cff16cfebe2700.setIcon(icon_7b128333d26f2054de29708a6fa88ab5);
+        
+    
+        var popup_43cbc97ad1a218e61282701712e6dc35 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_217d550c7717ec91c30f3bd8af2af095 = $(`<div id="html_217d550c7717ec91c30f3bd8af2af095" style="width: 100.0%; height: 100.0%;">고인돌은 청동기시대 지배층의 무덤으로 지석묘라고도 한다. 이 고인돌이 있는 자리는 일용골 마을 뒷산으로, 남북으로 길게 낮은 구릉성(丘陵性)산지가 형성되어 있다. 용화리에서 흘러 내려오던 금강의 물줄기가 이 구릉을 S자 형태로 휘어돌아 충청북도 영동쪽...</div>`)[0];
+                popup_43cbc97ad1a218e61282701712e6dc35.setContent(html_217d550c7717ec91c30f3bd8af2af095);
+            
+        
+
+        marker_03ccfa0e9480d7c496cff16cfebe2700.bindPopup(popup_43cbc97ad1a218e61282701712e6dc35)
+        ;
+
+        
+    
+    
+            marker_03ccfa0e9480d7c496cff16cfebe2700.bindTooltip(
+                `<div>
+                     금산 천내리 고인돌
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9798de50d2a354fb1ac5be5918416fa = L.marker(
+                [36.0990475, 127.5833885],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_b55c0d0ffc767d784967bfc08901da45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a9798de50d2a354fb1ac5be5918416fa.setIcon(icon_b55c0d0ffc767d784967bfc08901da45);
+        
+    
+        var popup_4f60c3e45efce1951262a2b5d4762ade = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_2b1afad32e98142fefb0fa085caa069a = $(`<div id="html_2b1afad32e98142fefb0fa085caa069a" style="width: 100.0%; height: 100.0%;">금산 용화리 고인돌이 있는 자리는 구릉성(丘陵性) 산지인 아랫말 뒷산 언덕으로서, 용화들과 용강(龍江)이 훤히 내려다보이는 지점이다. 남북으로형성된 구릉을 따라 3~8m가량 거리르 두고 3기가 일렬로 모두 덮개돌만 놓여 있다. 덮개돌의 형태는 타원형 ...</div>`)[0];
+                popup_4f60c3e45efce1951262a2b5d4762ade.setContent(html_2b1afad32e98142fefb0fa085caa069a);
+            
+        
+
+        marker_a9798de50d2a354fb1ac5be5918416fa.bindPopup(popup_4f60c3e45efce1951262a2b5d4762ade)
+        ;
+
+        
+    
+    
+            marker_a9798de50d2a354fb1ac5be5918416fa.bindTooltip(
+                `<div>
+                     금산 용화리 고인돌
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52846e9ebb41ecae12eaf4739cda1c66 = L.marker(
+                [36.108586, 127.4916257],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_2099154a3777978358e1b1fba15d6bd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_52846e9ebb41ecae12eaf4739cda1c66.setIcon(icon_2099154a3777978358e1b1fba15d6bd9);
+        
+    
+        var popup_728d88cd8eab9f239b613e0d369049ea = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_77de5291170b607874d869a3043d6f52 = $(`<div id="html_77de5291170b607874d869a3043d6f52" style="width: 100.0%; height: 100.0%;">대원정사는 원래 하신리 온양 이씨 어필각(溫陽李氏御筆閣) 인근에 있었으나, 일제시대 때현재의 위치에서 약 100m정도 떨어진 곳으로 옮겨졌다가 1982년 다시 현재의 위치로 옮겨졌다. 이 건물은 정면 3칸, 측면 2칸의 규모로 내부에 우물마루를 깔고 ...</div>`)[0];
+                popup_728d88cd8eab9f239b613e0d369049ea.setContent(html_77de5291170b607874d869a3043d6f52);
+            
+        
+
+        marker_52846e9ebb41ecae12eaf4739cda1c66.bindPopup(popup_728d88cd8eab9f239b613e0d369049ea)
+        ;
+
+        
+    
+    
+            marker_52846e9ebb41ecae12eaf4739cda1c66.bindTooltip(
+                `<div>
+                     금산 대원정사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_749112176eb0aec32a481dbed760fe3c = L.marker(
+                [36.2469156, 127.3846235],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_628d6619d2bcf6b5721e1d3d1b7e55c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_749112176eb0aec32a481dbed760fe3c.setIcon(icon_628d6619d2bcf6b5721e1d3d1b7e55c4);
+        
+    
+        var popup_97e17a02142a7896a2890af5eaf6ab4d = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_11142c28f51c6ba9c49c99691c69bac2 = $(`<div id="html_11142c28f51c6ba9c49c99691c69bac2" style="width: 100.0%; height: 100.0%;">금산 미륵사석조는 일반적인 테를 갖고, 남쪽 상단부에 낙수홈대를 마련하였고 내부 바닥 가운데에 물을 빼는 배수구멍이 있다. 낙수홈대는 밖으로 돌출되게 만들었고, 동쪽 벽의 위쪽을 오목하게 파서 물이 넘치지 않게 흘러 나가도록 하였으며 동쪽 벽 일부가 ...</div>`)[0];
+                popup_97e17a02142a7896a2890af5eaf6ab4d.setContent(html_11142c28f51c6ba9c49c99691c69bac2);
+            
+        
+
+        marker_749112176eb0aec32a481dbed760fe3c.bindPopup(popup_97e17a02142a7896a2890af5eaf6ab4d)
+        ;
+
+        
+    
+    
+            marker_749112176eb0aec32a481dbed760fe3c.bindTooltip(
+                `<div>
+                     금산 미륵사 석조
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3485eed67255779d1973eaecabb2361c = L.marker(
+                [36.1708665, 127.5824825],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_032409111f13602d61ae696fb785af0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3485eed67255779d1973eaecabb2361c.setIcon(icon_032409111f13602d61ae696fb785af0b);
+        
+    
+        var popup_bb88e3b513546c0d25c63f3dbfdafe11 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_0dc7a585deea7e91ab5e630569ab532d = $(`<div id="html_0dc7a585deea7e91ab5e630569ab532d" style="width: 100.0%; height: 100.0%;">신안리 동북쪽에 있는 해발 677m의 신음산 국사봉에서 내려온 지맥의 산록에 있는 이 절은 신라26대진평왕 5년인 583년 무염선사가 창건했다. 신안사라는 이름은 신라 마지막 왕 경순왕(제위 927년-935년)이 충북 영동군 양산면에 있는 영국사에서수...</div>`)[0];
+                popup_bb88e3b513546c0d25c63f3dbfdafe11.setContent(html_0dc7a585deea7e91ab5e630569ab532d);
+            
+        
+
+        marker_3485eed67255779d1973eaecabb2361c.bindPopup(popup_bb88e3b513546c0d25c63f3dbfdafe11)
+        ;
+
+        
+    
+    
+            marker_3485eed67255779d1973eaecabb2361c.bindTooltip(
+                `<div>
+                     신안사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5babc85d90624fb45c24d5f3d9ce0040 = L.marker(
+                [36.0542737, 127.4759457],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_d69bc30cbd1015cc189c87288abde6d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5babc85d90624fb45c24d5f3d9ce0040.setIcon(icon_d69bc30cbd1015cc189c87288abde6d5);
+        
+    
+        var popup_0f41aa52bba4622f0dd2014cd2313b5e = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_4a4a54c2e797e3bbb53f39bc5e9517fc = $(`<div id="html_4a4a54c2e797e3bbb53f39bc5e9517fc" style="width: 100.0%; height: 100.0%;">보석사는 금산군 남이면의 진악산(進樂山) 동쪽 기슭에 있는 사찰로, 신라 헌강왕 11년(885)에 조구선사(祖丘禪師)가 창건하였다. 창건 당시 절 앞에서 캐낸 금으로 불상을 만들었기 때문에절 이름을 보석사라고 하였다 한다.임진왜란 때 소실된 것을 조선...</div>`)[0];
+                popup_0f41aa52bba4622f0dd2014cd2313b5e.setContent(html_4a4a54c2e797e3bbb53f39bc5e9517fc);
+            
+        
+
+        marker_5babc85d90624fb45c24d5f3d9ce0040.bindPopup(popup_0f41aa52bba4622f0dd2014cd2313b5e)
+        ;
+
+        
+    
+    
+            marker_5babc85d90624fb45c24d5f3d9ce0040.bindTooltip(
+                `<div>
+                     보석사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1e4815c3cae10ade311e18704463511 = L.marker(
+                [36.0604084, 127.4693234],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_4dbbde57984397dcedecdb5280020800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a1e4815c3cae10ade311e18704463511.setIcon(icon_4dbbde57984397dcedecdb5280020800);
+        
+    
+        var popup_aa48fb4e16d38a6bbfe68e6d0fe05ef4 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_49039bc919b9a558d429b169fe4b12c5 = $(`<div id="html_49039bc919b9a558d429b169fe4b12c5" style="width: 100.0%; height: 100.0%;">영천암(靈泉庵)은 금산군 남이면 석동리 진악산(進樂山)에 자리하고 있으며, 보석사의 북쪽으로 약 1km 정도 떨어진 산기슭에 있다. 사찰 이름에서 알 수 있듯이 칠성각의 뒷편에 있는 샘물인 영천(靈泉)이 특히 유명한데, 이 지역 사람들에게는 여러 가지...</div>`)[0];
+                popup_aa48fb4e16d38a6bbfe68e6d0fe05ef4.setContent(html_49039bc919b9a558d429b169fe4b12c5);
+            
+        
+
+        marker_a1e4815c3cae10ade311e18704463511.bindPopup(popup_aa48fb4e16d38a6bbfe68e6d0fe05ef4)
+        ;
+
+        
+    
+    
+            marker_a1e4815c3cae10ade311e18704463511.bindTooltip(
+                `<div>
+                     영천암
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a34349b3465d8a34e29cb79c591a5b53 = L.marker(
+                [36.1348859, 127.3259611],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_d6802f244b849fe6327e9455b2e78e23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a34349b3465d8a34e29cb79c591a5b53.setIcon(icon_d6802f244b849fe6327e9455b2e78e23);
+        
+    
+        var popup_f9dcc4cb37b5b4aeca033dfb6821de49 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_85200d793fb0a66fe93313874d2cc3f3 = $(`<div id="html_85200d793fb0a66fe93313874d2cc3f3" style="width: 100.0%; height: 100.0%;">태고사는 대둔산(大芚山) 마천대(摩天臺) 밑의 능선에 위치한 절로, 신라 신문왕 때 원효대사(元曉大師)가 창건하였다고 한다. 절터를 본 원효대사가 너무 기뻐 3일 동안 춤을 추었다고 할 만큼 주변 경관이 빼어나다. 고려시대 태고화상(太古和尙)이 중창하...</div>`)[0];
+                popup_f9dcc4cb37b5b4aeca033dfb6821de49.setContent(html_85200d793fb0a66fe93313874d2cc3f3);
+            
+        
+
+        marker_a34349b3465d8a34e29cb79c591a5b53.bindPopup(popup_f9dcc4cb37b5b4aeca033dfb6821de49)
+        ;
+
+        
+    
+    
+            marker_a34349b3465d8a34e29cb79c591a5b53.bindTooltip(
+                `<div>
+                     태고사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_feb2231940ce246d2c9ae4f225923dd5 = L.marker(
+                [36.2184588, 127.5279585],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_bec41b9428e874fbbf866b8e4d8075c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_feb2231940ce246d2c9ae4f225923dd5.setIcon(icon_bec41b9428e874fbbf866b8e4d8075c7);
+        
+    
+        var popup_b0460e7626d57a5b7875785787ee0f5b = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_95f88a0e33b41aca97b76a0c9ef2a94f = $(`<div id="html_95f88a0e33b41aca97b76a0c9ef2a94f" style="width: 100.0%; height: 100.0%;">원흥사(元興寺)는 금산군 추부면 서태리 서대산(西臺山)에 자리하고 있는 한국불교태고종 소속의 사찰이다. 현재의 전각은 모두 근대 이후에조성된 것들이며, 1931년 김만덕화 보살이 옛 서대사(西臺寺) 터에 새롭게 창건하였다는 내용이 전한다. 실제로『신증...</div>`)[0];
+                popup_b0460e7626d57a5b7875785787ee0f5b.setContent(html_95f88a0e33b41aca97b76a0c9ef2a94f);
+            
+        
+
+        marker_feb2231940ce246d2c9ae4f225923dd5.bindPopup(popup_b0460e7626d57a5b7875785787ee0f5b)
+        ;
+
+        
+    
+    
+            marker_feb2231940ce246d2c9ae4f225923dd5.bindTooltip(
+                `<div>
+                     서대사(구)원흥사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9f72fcfe3f9ed5a09597ee9bf98af1c = L.marker(
+                [36.2487711, 127.3843153],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_efb4bee98373ffea44cc1d07bc5a53bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e9f72fcfe3f9ed5a09597ee9bf98af1c.setIcon(icon_efb4bee98373ffea44cc1d07bc5a53bf);
+        
+    
+        var popup_4a14b7a5a9fe61fff2c4b35eb7cb23a1 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_dafd2379bf87820a1e6ea49139dac577 = $(`<div id="html_dafd2379bf87820a1e6ea49139dac577" style="width: 100.0%; height: 100.0%;">재단법인 선학원 분원이다. 성덕대왕 2년(703) 창건되었으며, 1948년 소실되기 전에는 대웅전과 칠성각, 산신각, 요사 등을 갖추고 있었다. 경내에 고려시대 만들어진 것으로 추정되는 석조(문화재자료 제409호)가 있으며, 건물 뒤편에는 양감이 풍부...</div>`)[0];
+                popup_4a14b7a5a9fe61fff2c4b35eb7cb23a1.setContent(html_dafd2379bf87820a1e6ea49139dac577);
+            
+        
+
+        marker_e9f72fcfe3f9ed5a09597ee9bf98af1c.bindPopup(popup_4a14b7a5a9fe61fff2c4b35eb7cb23a1)
+        ;
+
+        
+    
+    
+            marker_e9f72fcfe3f9ed5a09597ee9bf98af1c.bindTooltip(
+                `<div>
+                     미륵사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ff1509e03a7ef6c4d0c0fdac3db10f2 = L.marker(
+                [36.075022, 127.4779738],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_2283e9fb226f0fb00386e4d57a464eb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3ff1509e03a7ef6c4d0c0fdac3db10f2.setIcon(icon_2283e9fb226f0fb00386e4d57a464eb3);
+        
+    
+        var popup_641fab3f293c512ab79949a4a7b504a1 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_9ebcefe9b5459cec6cc0be72ae3ce04b = $(`<div id="html_9ebcefe9b5459cec6cc0be72ae3ce04b" style="width: 100.0%; height: 100.0%;">최초로 인삼을 심은 곳이라 하여 개삼터로 불리며 전설이 전한다. 지금으로부터 1,500여 년 전 강씨성을 가진 처사가 일찍이 부친을 여의고 모친마저 병이 들어 자리에 눕자, 진악산 관음굴에서 정성을 들여 모친의쾌유를 빌었다. 그러던 어느 날, 꿈 속에...</div>`)[0];
+                popup_641fab3f293c512ab79949a4a7b504a1.setContent(html_9ebcefe9b5459cec6cc0be72ae3ce04b);
+            
+        
+
+        marker_3ff1509e03a7ef6c4d0c0fdac3db10f2.bindPopup(popup_641fab3f293c512ab79949a4a7b504a1)
+        ;
+
+        
+    
+    
+            marker_3ff1509e03a7ef6c4d0c0fdac3db10f2.bindTooltip(
+                `<div>
+                     개삼각
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0424bd3e03aa5da8b6cdd8b51fe929c1 = L.marker(
+                [36.0604084, 127.4693234],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_228df122997a8529ba761f16352dbdcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0424bd3e03aa5da8b6cdd8b51fe929c1.setIcon(icon_228df122997a8529ba761f16352dbdcc);
+        
+    
+        var popup_0bd4c538f076fd0b887ae8c45d83e160 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_60ab26d462d8014fd49e6fc82896b996 = $(`<div id="html_60ab26d462d8014fd49e6fc82896b996" style="width: 100.0%; height: 100.0%;">남이면 석동리 진악산 남쪽 보석사에서2km쯤 산중으로 들어간 지점에 있다. 이 사찰도 보석사와 같은 연대에 조구화상이 수도장으로 창건한 절이다. 영천암이라는 이름은 절 뒤 암굴에서 석간수가 끊임없이 솟아올라 이 물이 병자에게 특효가 있는 영험한 샘이라...</div>`)[0];
+                popup_0bd4c538f076fd0b887ae8c45d83e160.setContent(html_60ab26d462d8014fd49e6fc82896b996);
+            
+        
+
+        marker_0424bd3e03aa5da8b6cdd8b51fe929c1.bindPopup(popup_0bd4c538f076fd0b887ae8c45d83e160)
+        ;
+
+        
+    
+    
+            marker_0424bd3e03aa5da8b6cdd8b51fe929c1.bindTooltip(
+                `<div>
+                     영천암
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48bd373f60d268974b57a0272e2424d4 = L.marker(
+                [36.0781184, 127.4531786],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_8b64963fb7d5f2bb7efc960347b318d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48bd373f60d268974b57a0272e2424d4.setIcon(icon_8b64963fb7d5f2bb7efc960347b318d3);
+        
+    
+        var popup_90918c5ef15653cf96d4f19cb0535dfa = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_27e6e90a833efafad803a32bdf68748a = $(`<div id="html_27e6e90a833efafad803a32bdf68748a" style="width: 100.0%; height: 100.0%;">이 절은 진악산 최고봉인 관앙불봉(觀仰佛峰) 남쪽에 있는 절로 신라시대 원효대사가 창건했다는 설이 있으나 조구대사가 창건했다는 것이 정설로 되어 있다. 산이 깊고 조용하며 절 앞의 개울 물은 20여 m의 폭포를 이루며 봉수대가 있는 관앙불봉을 뒤로 하...</div>`)[0];
+                popup_90918c5ef15653cf96d4f19cb0535dfa.setContent(html_27e6e90a833efafad803a32bdf68748a);
+            
+        
+
+        marker_48bd373f60d268974b57a0272e2424d4.bindPopup(popup_90918c5ef15653cf96d4f19cb0535dfa)
+        ;
+
+        
+    
+    
+            marker_48bd373f60d268974b57a0272e2424d4.bindTooltip(
+                `<div>
+                     원효암
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22572e5bf49076d9a1b926173abac8da = L.marker(
+                [36.0760473, 127.5160735],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_da5045bf1678637709874354edb3ab12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_22572e5bf49076d9a1b926173abac8da.setIcon(icon_da5045bf1678637709874354edb3ab12);
+        
+    
+        var popup_012b1afc3da37f7f0adb65a703e84551 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_462671c4ccc53faa539f4e5f2e2c430d = $(`<div id="html_462671c4ccc53faa539f4e5f2e2c430d" style="width: 100.0%; height: 100.0%;">남일면 마장리에 자리 잡고 있는 숭모사와 삼세충의(三世忠義)비는 고려말 조선초(高麗末朝鮮初)에 불사이군(不事二君)의 충절을 지켜 태종의간곡한 부름에도 응하지 않고 세상에서 은둔한도소재 박힐(逃召齋朴詰)과 세조의 탈권에 항거하고 단종의 복위를 꾀하다가 ...</div>`)[0];
+                popup_012b1afc3da37f7f0adb65a703e84551.setContent(html_462671c4ccc53faa539f4e5f2e2c430d);
+            
+        
+
+        marker_22572e5bf49076d9a1b926173abac8da.bindPopup(popup_012b1afc3da37f7f0adb65a703e84551)
+        ;
+
+        
+    
+    
+            marker_22572e5bf49076d9a1b926173abac8da.bindTooltip(
+                `<div>
+                     숭모사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7192fa757b242a00f7705d5aef7936d1 = L.marker(
+                [36.1113728, 127.5457234],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_dec15dacd86a81c24e2e0d8ad2c2f43d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7192fa757b242a00f7705d5aef7936d1.setIcon(icon_dec15dacd86a81c24e2e0d8ad2c2f43d);
+        
+    
+        var popup_b01953a59ccab56ce690d9aca571933c = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_ad507322e3d5f4e790b1111a8676645e = $(`<div id="html_ad507322e3d5f4e790b1111a8676645e" style="width: 100.0%; height: 100.0%;">제원면 제원리 마을입구의 금산과 영동을잇는 도로 왼쪽에 암석을 깎은 듯이 절벽이이루어져, 자연비(自然碑)처럼 되어 있고, 어풍대라는 글자가 새겨겨 있는데 재미난 이야기가 구전되고 있다. 이조 선조 때에 허목(許穆1595~1682)이제원역의 찰방으로 있...</div>`)[0];
+                popup_b01953a59ccab56ce690d9aca571933c.setContent(html_ad507322e3d5f4e790b1111a8676645e);
+            
+        
+
+        marker_7192fa757b242a00f7705d5aef7936d1.bindPopup(popup_b01953a59ccab56ce690d9aca571933c)
+        ;
+
+        
+    
+    
+            marker_7192fa757b242a00f7705d5aef7936d1.bindTooltip(
+                `<div>
+                     어풍대
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6def8d9d50b741015be9d92371c1f817 = L.marker(
+                [36.1113728, 127.5457234],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_d3c1ecb2d9e08a8dafc9f02e493a39f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6def8d9d50b741015be9d92371c1f817.setIcon(icon_d3c1ecb2d9e08a8dafc9f02e493a39f3);
+        
+    
+        var popup_d5779eacaf82785eb9431dba91b5e2e9 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_f62e2b2ee62f142c683e20ea22592921 = $(`<div id="html_f62e2b2ee62f142c683e20ea22592921" style="width: 100.0%; height: 100.0%;">제원면 제원리 마을입구에 어풍대 바로 옆에 세마지(洗馬池)라고해서(楷書)로 새긴 글씨가 뚜렷이보인다. 그 밑은 지금은 남아있지 않지만 옛날에는 큰 못으로제원역에서 기르는 말을 씻긴 곳이라 전한다. ※역(驛) : 옛날의 교통 통신기관으로 30리마다 설치...</div>`)[0];
+                popup_d5779eacaf82785eb9431dba91b5e2e9.setContent(html_f62e2b2ee62f142c683e20ea22592921);
+            
+        
+
+        marker_6def8d9d50b741015be9d92371c1f817.bindPopup(popup_d5779eacaf82785eb9431dba91b5e2e9)
+        ;
+
+        
+    
+    
+            marker_6def8d9d50b741015be9d92371c1f817.bindTooltip(
+                `<div>
+                     세마지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_466a31b49d5bb864509243620ff79278 = L.marker(
+                [36.1921717, 127.3894114],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_2d88739e141152d8b1ff971331a23bbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_466a31b49d5bb864509243620ff79278.setIcon(icon_2d88739e141152d8b1ff971331a23bbb);
+        
+    
+        var popup_43442cb337cbfaa548aace5ad1ff287a = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_6e5a8d26c1f9b0bb95bb3c133a8babf1 = $(`<div id="html_6e5a8d26c1f9b0bb95bb3c133a8babf1" style="width: 100.0%; height: 100.0%;">복수면 백암리 518번지에는 수령이 500여 년 되고 수고(樹高)가 35m, 흉고(胸高) 둘레가 9.4m인 괴목 두 그루가 나란히 서 있어 사람들은 이를 쌍괴정(雙槐亭)이라고 부르고 있다. 이 나무는 언제 누가 심어서 가꾸었는지 전혀 알 수 없지만 복...</div>`)[0];
+                popup_43442cb337cbfaa548aace5ad1ff287a.setContent(html_6e5a8d26c1f9b0bb95bb3c133a8babf1);
+            
+        
+
+        marker_466a31b49d5bb864509243620ff79278.bindPopup(popup_43442cb337cbfaa548aace5ad1ff287a)
+        ;
+
+        
+    
+    
+            marker_466a31b49d5bb864509243620ff79278.bindTooltip(
+                `<div>
+                     백암느티나무
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0af5da41792eccb5b895e003b46da045 = L.marker(
+                [36.0980519, 127.4764882],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_231c27eef3066913629d82358c9c5d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0af5da41792eccb5b895e003b46da045.setIcon(icon_231c27eef3066913629d82358c9c5d2c);
+        
+    
+        var popup_7462eaec511338221e8b3ec0c884b254 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_1c2d36482e4050afe5b6e0da29955b5e = $(`<div id="html_1c2d36482e4050afe5b6e0da29955b5e" style="width: 100.0%; height: 100.0%;">홍범식군수순절비는 1871년 7월 23일 충북 괴산에서태어나 1909년 금산군수로 부임한 이듬해 한일합방조약이 체결되어 나라가 망하자 통분을 못이겨 자결한홍범식 선생의 충절을 기리기 위해 건립한 비이다. 한일합방시 금산군수였던 홍범식은 나라가 일본 제...</div>`)[0];
+                popup_7462eaec511338221e8b3ec0c884b254.setContent(html_1c2d36482e4050afe5b6e0da29955b5e);
+            
+        
+
+        marker_0af5da41792eccb5b895e003b46da045.bindPopup(popup_7462eaec511338221e8b3ec0c884b254)
+        ;
+
+        
+    
+    
+            marker_0af5da41792eccb5b895e003b46da045.bindTooltip(
+                `<div>
+                     홍범식군수순절비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_052d3d31eef9ed5119e2c42b2b83f221 = L.marker(
+                [36.1220578, 127.5533905],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_4276823b6327fd5cc96768de0374e7ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_052d3d31eef9ed5119e2c42b2b83f221.setIcon(icon_4276823b6327fd5cc96768de0374e7ae);
+        
+    
+        var popup_bb4b63f61484c66cd5cd4da783abf32a = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_3912722d5b39999fcfff1a33893f107a = $(`<div id="html_3912722d5b39999fcfff1a33893f107a" style="width: 100.0%; height: 100.0%;">경주 김씨(慶州 金氏)는 대산리 김헌동의 집으로 출가하여 다리도 잘 못쓰는 소아마비 남편을 섬기는데 정성을 다하였다. 남편이 사망하자 3년 동안 하루도 빠짐없이 삼베치마를 입고 예를 지켰으며, 개가할 권유도 여러 번 받았으나 응하지 않고 독신으로 살면...</div>`)[0];
+                popup_bb4b63f61484c66cd5cd4da783abf32a.setContent(html_3912722d5b39999fcfff1a33893f107a);
+            
+        
+
+        marker_052d3d31eef9ed5119e2c42b2b83f221.bindPopup(popup_bb4b63f61484c66cd5cd4da783abf32a)
+        ;
+
+        
+    
+    
+            marker_052d3d31eef9ed5119e2c42b2b83f221.bindTooltip(
+                `<div>
+                     경주 김씨 효열비각
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcbac7f6273b70b97fc49a70e3c0e6a8 = L.marker(
+                [36.1366143, 127.4765106],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_ecfcae269904d9be1e5d4032a467c134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_dcbac7f6273b70b97fc49a70e3c0e6a8.setIcon(icon_ecfcae269904d9be1e5d4032a467c134);
+        
+    
+        var popup_ae50bd4f23275ef2f65031554534c37a = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_5e560148159e3145c74ab465df960b3b = $(`<div id="html_5e560148159e3145c74ab465df960b3b" style="width: 100.0%; height: 100.0%;">금성면 하류리 유곡(柳谷)에 있는 사당으로 유곡사에는 문충공 한교(文忠公韓), 유곡 이유택(柳谷李惟澤) 두분의 효자 현인을 모신 사당이다. 유곡사는 현종 15년(1674년)에 건립되었으며 숙종 28년(1702년)에 유곡사라는 사액을 내리고 복호 2결을...</div>`)[0];
+                popup_ae50bd4f23275ef2f65031554534c37a.setContent(html_5e560148159e3145c74ab465df960b3b);
+            
+        
+
+        marker_dcbac7f6273b70b97fc49a70e3c0e6a8.bindPopup(popup_ae50bd4f23275ef2f65031554534c37a)
+        ;
+
+        
+    
+    
+            marker_dcbac7f6273b70b97fc49a70e3c0e6a8.bindTooltip(
+                `<div>
+                     유곡사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07b1ff0b84d57645f07cc6df3aec1185 = L.marker(
+                [36.1267971, 127.5600968],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_9d0d78f36866a3e296e7c8978d603812 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_07b1ff0b84d57645f07cc6df3aec1185.setIcon(icon_9d0d78f36866a3e296e7c8978d603812);
+        
+    
+        var popup_d09c68e8367a48b978b30ef5532d2dc1 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_6ebbf0af3d593c19f166954c6340c79d = $(`<div id="html_6ebbf0af3d593c19f166954c6340c79d" style="width: 100.0%; height: 100.0%;">제원면 대산리에 있는 영산신씨의 문중사당이다. 덕재 신천(德齋辛), 극재 신인거(克齋辛引), 응청당 신정(凝淸堂辛靖) 3위를 배향하고있다. 이 사당은 1959년에 건립되었다가 2008년에 중건하였다.</div>`)[0];
+                popup_d09c68e8367a48b978b30ef5532d2dc1.setContent(html_6ebbf0af3d593c19f166954c6340c79d);
+            
+        
+
+        marker_07b1ff0b84d57645f07cc6df3aec1185.bindPopup(popup_d09c68e8367a48b978b30ef5532d2dc1)
+        ;
+
+        
+    
+    
+            marker_07b1ff0b84d57645f07cc6df3aec1185.bindTooltip(
+                `<div>
+                     대산사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04738bf6fde1600cfd098a69b55ed2e0 = L.marker(
+                [36.0422317, 127.5030534],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_0fc624eca608fd77b17ea548c5e45e66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_04738bf6fde1600cfd098a69b55ed2e0.setIcon(icon_0fc624eca608fd77b17ea548c5e45e66);
+        
+    
+        var popup_04948bdbedf95f91e65b99dbe2b69e90 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_70a1e5e187160270e60b33f5301377a3 = $(`<div id="html_70a1e5e187160270e60b33f5301377a3" style="width: 100.0%; height: 100.0%;">남일면 초현리에 있는 현풍곽씨의 사당으로 단묘충신(端廟忠臣) 곽사(郭師)를 모신 사당이다. 공은 세종조에 등제하여 벼슬이 이조판서에까지이르렀으나 세조의 탈권으로 단종이 영월에서 해를 당하자 벼슬을 버리고 아들 득창과 함께 금산의 옥황동에 와서 다시는 ...</div>`)[0];
+                popup_04948bdbedf95f91e65b99dbe2b69e90.setContent(html_70a1e5e187160270e60b33f5301377a3);
+            
+        
+
+        marker_04738bf6fde1600cfd098a69b55ed2e0.bindPopup(popup_04948bdbedf95f91e65b99dbe2b69e90)
+        ;
+
+        
+    
+    
+            marker_04738bf6fde1600cfd098a69b55ed2e0.bindTooltip(
+                `<div>
+                     정의사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d53ad0c23b4a8616ad8c1bd357e488ca = L.marker(
+                [36.0845697, 127.5201499],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_d135d962043cc17d315b2ea8f17ee3dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d53ad0c23b4a8616ad8c1bd357e488ca.setIcon(icon_d135d962043cc17d315b2ea8f17ee3dc);
+        
+    
+        var popup_292ab37d6e1a256e53e1cefff79fa4bf = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_500aae2649d780820f27d4ee4dae2178 = $(`<div id="html_500aae2649d780820f27d4ee4dae2178" style="width: 100.0%; height: 100.0%;">남일면 마장리 삼태부락 산밑에 있는 사당으로, 충신 양제(梁齊)를 모신 곳이다. 양제는 임진왜란 때 진주성을 지켜 큰 공을 세우고 적의 최후공격에 성이 빼앗겨 촉석루에서 남강에 투신자결한 충신으로 진주 창열사(彰烈祠)에도 배향돼 있다. 이 사당은 19...</div>`)[0];
+                popup_292ab37d6e1a256e53e1cefff79fa4bf.setContent(html_500aae2649d780820f27d4ee4dae2178);
+            
+        
+
+        marker_d53ad0c23b4a8616ad8c1bd357e488ca.bindPopup(popup_292ab37d6e1a256e53e1cefff79fa4bf)
+        ;
+
+        
+    
+    
+            marker_d53ad0c23b4a8616ad8c1bd357e488ca.bindTooltip(
+                `<div>
+                     정충사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50944350403f3a5a1df8d6af2dfcd7b7 = L.marker(
+                [36.021807, 127.4580441],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_f73d966f0e83ca5b9295a54521e032da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_50944350403f3a5a1df8d6af2dfcd7b7.setIcon(icon_f73d966f0e83ca5b9295a54521e032da);
+        
+    
+        var popup_52964e557ed0c41d0e664b44dc3626b3 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_320a40bc2cd88fe8dd5a55af93391a3b = $(`<div id="html_320a40bc2cd88fe8dd5a55af93391a3b" style="width: 100.0%; height: 100.0%;">1964년에 건립된 귀봉사(龜峰祠)는 남이면 흑암리에 위치한 김해 김씨(金海金氏)의 문중사당으로 흥무왕 김유신(興武王金庾臣), 평장사공김란(平章事公金蘭), 절효공 김극일(節孝公金克一), 안경공 김영정(安敬公金永貞), 의헌공 김예직(毅憲公金禮直) 등 5...</div>`)[0];
+                popup_52964e557ed0c41d0e664b44dc3626b3.setContent(html_320a40bc2cd88fe8dd5a55af93391a3b);
+            
+        
+
+        marker_50944350403f3a5a1df8d6af2dfcd7b7.bindPopup(popup_52964e557ed0c41d0e664b44dc3626b3)
+        ;
+
+        
+    
+    
+            marker_50944350403f3a5a1df8d6af2dfcd7b7.bindTooltip(
+                `<div>
+                     귀봉사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f598831667c74d5c878a46efa1691245 = L.marker(
+                [36.0250798, 127.4556794],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_990185d6a87a4c44f1ccd2ab797d073d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f598831667c74d5c878a46efa1691245.setIcon(icon_990185d6a87a4c44f1ccd2ab797d073d);
+        
+    
+        var popup_c472c65c0df94d870db112d44ff4b2ff = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_958ad2a11b1cd92a47c33bc34603d85e = $(`<div id="html_958ad2a11b1cd92a47c33bc34603d85e" style="width: 100.0%; height: 100.0%;">숭절사는 조선초 단종 때 이조판서 묵재 김종한(默齋金宗漢)선생과 좌의정 절재 김종서(節齋金宗瑞)선생 형제분을 모신 사우이다. 묵재 선생은 문종 때에 이조판서에 배수(拜受)되었으며 단종 원년(1453년)에 수양대군에 의한 계유정란에 아우인 절재 김종서와...</div>`)[0];
+                popup_c472c65c0df94d870db112d44ff4b2ff.setContent(html_958ad2a11b1cd92a47c33bc34603d85e);
+            
+        
+
+        marker_f598831667c74d5c878a46efa1691245.bindPopup(popup_c472c65c0df94d870db112d44ff4b2ff)
+        ;
+
+        
+    
+    
+            marker_f598831667c74d5c878a46efa1691245.bindTooltip(
+                `<div>
+                     숭절사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5d5df91e14021a5c9d825c4ea3e0dc2 = L.marker(
+                [36.1379069, 127.5100223],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_6df47816bba5f18c9593b58ad7acc913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a5d5df91e14021a5c9d825c4ea3e0dc2.setIcon(icon_6df47816bba5f18c9593b58ad7acc913);
+        
+    
+        var popup_bbb4fd6dded2271b58570b17bfa3d6c1 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_03a3f77748da9e28f09dfa7e906b5599 = $(`<div id="html_03a3f77748da9e28f09dfa7e906b5599" style="width: 100.0%; height: 100.0%;">숭의재는 고려말 홍문관 예문관 대제학(弘文館 藝文館大提學) 천안전씨대제학공파(天安全氏大提學公波) 전익(全翊)의 5세손 대호군(大護軍) 전충로(全忠老)를 배향한 사당이다. 전충로는 1498년(연산군 4) 무오사화(戊午士禍)와 1504년(연산군 10) 갑...</div>`)[0];
+                popup_bbb4fd6dded2271b58570b17bfa3d6c1.setContent(html_03a3f77748da9e28f09dfa7e906b5599);
+            
+        
+
+        marker_a5d5df91e14021a5c9d825c4ea3e0dc2.bindPopup(popup_bbb4fd6dded2271b58570b17bfa3d6c1)
+        ;
+
+        
+    
+    
+            marker_a5d5df91e14021a5c9d825c4ea3e0dc2.bindTooltip(
+                `<div>
+                     숭의재
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_296ae245f170c124967e375717e2c889 = L.marker(
+                [36.1917608, 127.4694628],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_c0d36bcd3853edd01b89a4b50182b097 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_296ae245f170c124967e375717e2c889.setIcon(icon_c0d36bcd3853edd01b89a4b50182b097);
+        
+    
+        var popup_846f396653703f9039a7e67c284d93f6 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_b94a48dcbb88b775cb74cc3adf012072 = $(`<div id="html_b94a48dcbb88b775cb74cc3adf012072" style="width: 100.0%; height: 100.0%;">정부인 한씨는 청주한공 사의(淸州韓公 師義)의 딸로서 강라영(姜羅永)과 혼인하여 공경과 예로서 시부모와 남편을 극진히 받들었다. 시할머니께서 세상을 떠날 때에는 손가락을 찢어 피를 내어 먹여 몇 년을 더 살게 하였으며, 시어머니가 돌아가심에 삼년 동안...</div>`)[0];
+                popup_846f396653703f9039a7e67c284d93f6.setContent(html_b94a48dcbb88b775cb74cc3adf012072);
+            
+        
+
+        marker_296ae245f170c124967e375717e2c889.bindPopup(popup_846f396653703f9039a7e67c284d93f6)
+        ;
+
+        
+    
+    
+            marker_296ae245f170c124967e375717e2c889.bindTooltip(
+                `<div>
+                     청주한씨정려각
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8494b9c5529cd1050b73eacdf6c503e0 = L.marker(
+                [36.1455559, 127.4931133],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_0a799e9a443ca1223056f408df05b9ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8494b9c5529cd1050b73eacdf6c503e0.setIcon(icon_0a799e9a443ca1223056f408df05b9ac);
+        
+    
+        var popup_c1831ddb6fd753b7a23a3747b8223c36 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_67d3dc214e04607ef1b5dae3e9162a10 = $(`<div id="html_67d3dc214e04607ef1b5dae3e9162a10" style="width: 100.0%; height: 100.0%;">현덕사는 조선 전기의 문신 박흥생(朴興生)을 배향한 사당이다. 박흥생(1374~1446)의 자는 경부(敬夫), 호는 국당(菊堂)으로, 여흥부(驪興府), 춘천부(春川府) 교수敎授)를 역임하였고, 1423년(세종 5) 평창현령(平昌縣令)을 제수받았다. 효...</div>`)[0];
+                popup_c1831ddb6fd753b7a23a3747b8223c36.setContent(html_67d3dc214e04607ef1b5dae3e9162a10);
+            
+        
+
+        marker_8494b9c5529cd1050b73eacdf6c503e0.bindPopup(popup_c1831ddb6fd753b7a23a3747b8223c36)
+        ;
+
+        
+    
+    
+            marker_8494b9c5529cd1050b73eacdf6c503e0.bindTooltip(
+                `<div>
+                     현덕사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea88bf2d0efa71bf6826cde63ffcf316 = L.marker(
+                [36.1358634, 127.5089319],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_39583bf2372411d0150d35c8f1b820d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ea88bf2d0efa71bf6826cde63ffcf316.setIcon(icon_39583bf2372411d0150d35c8f1b820d0);
+        
+    
+        var popup_b1e7546d908fb9a6147752add456c14a = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_570e3853b3742b72baffe8fc54e91f3e = $(`<div id="html_570e3853b3742b72baffe8fc54e91f3e" style="width: 100.0%; height: 100.0%;">형수당은 효성이 지극하고 우애가 돈독한 전유(全瑜), 전완(全琬), 전구(全球) 삼형제를 배향한 사당이다. 삼형제는 대현(大賢) 우암 송시열(尤庵 宋時烈) 문하에 수학하였으나 벼슬길에는 나가지 않고 형제가 한 집안에 같이 살면서 힘을 다해서 부모봉양과...</div>`)[0];
+                popup_b1e7546d908fb9a6147752add456c14a.setContent(html_570e3853b3742b72baffe8fc54e91f3e);
+            
+        
+
+        marker_ea88bf2d0efa71bf6826cde63ffcf316.bindPopup(popup_b1e7546d908fb9a6147752add456c14a)
+        ;
+
+        
+    
+    
+            marker_ea88bf2d0efa71bf6826cde63ffcf316.bindTooltip(
+                `<div>
+                     형수당
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16fc4253b88b8a7d211a4c53f4e31497 = L.marker(
+                [36.0848617, 127.5014676],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_27cca2f07ef08661730a2c3482333fd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_16fc4253b88b8a7d211a4c53f4e31497.setIcon(icon_27cca2f07ef08661730a2c3482333fd5);
+        
+    
+        var popup_a699e43f944776bb202d646417b19a9a = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_07c3d31dce9e80d3908e00cb805b930b = $(`<div id="html_07c3d31dce9e80d3908e00cb805b930b" style="width: 100.0%; height: 100.0%;">황풍사는 금산김씨(錦山金氏)의 시조 낙천재 김신(樂天齋 金侁)을 배향한 사당이다. 김신은 고종 때 문과에 급제, 사간원좌정언(司諫院左正言)을 거쳐 추밀원부사(樞密院副使)로 원종 때에 원나라에 들어갔을 때 공훈을 세워 요양행성참정(遼陽行省參政)을 제수받...</div>`)[0];
+                popup_a699e43f944776bb202d646417b19a9a.setContent(html_07c3d31dce9e80d3908e00cb805b930b);
+            
+        
+
+        marker_16fc4253b88b8a7d211a4c53f4e31497.bindPopup(popup_a699e43f944776bb202d646417b19a9a)
+        ;
+
+        
+    
+    
+            marker_16fc4253b88b8a7d211a4c53f4e31497.bindTooltip(
+                `<div>
+                     황풍사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae3f6a9a4691995705aa3a35b0c0cbc0 = L.marker(
+                [36.1309887, 127.5032599],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_b2b172a01352b4f11d9a02e99b245577 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ae3f6a9a4691995705aa3a35b0c0cbc0.setIcon(icon_b2b172a01352b4f11d9a02e99b245577);
+        
+    
+        var popup_50ca687c6ed83376af10fc19bf67e7b1 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_e23472ebd520f9f60dd6f4251c39d863 = $(`<div id="html_e23472ebd520f9f60dd6f4251c39d863" style="width: 100.0%; height: 100.0%;">영산 신씨(靈山 辛氏)는 신흥환(辛興煥)의 딸로 전기평(全基平)의 아내이다. 시집간 후 불과 몇 해가 되지 않은 17세에 남편이 죽자 그 남편의 뒤를 따라 목매어 자결하였다. 사림(士林)에서 이를 포상하고 정각을 세워 귀감이 되도록 하였다. (출처:『...</div>`)[0];
+                popup_50ca687c6ed83376af10fc19bf67e7b1.setContent(html_e23472ebd520f9f60dd6f4251c39d863);
+            
+        
+
+        marker_ae3f6a9a4691995705aa3a35b0c0cbc0.bindPopup(popup_50ca687c6ed83376af10fc19bf67e7b1)
+        ;
+
+        
+    
+    
+            marker_ae3f6a9a4691995705aa3a35b0c0cbc0.bindTooltip(
+                `<div>
+                     영산신씨정려각
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8731c26bec6358b72d170ff1c66a4b1f = L.marker(
+                [36.1250822, 127.4883536],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_805858daca02e190e09d763cefec2452 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8731c26bec6358b72d170ff1c66a4b1f.setIcon(icon_805858daca02e190e09d763cefec2452);
+        
+    
+        var popup_c7a2c4f0fbd0638651338503eba217f6 = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_d7604898583a646c652d94ff1d075b68 = $(`<div id="html_d7604898583a646c652d94ff1d075b68" style="width: 100.0%; height: 100.0%;">1969년 미국 필코포드사(Philco Ford)에서 제작된 안테나설비로 1970년 충남 금산에 우리나라 최초의 위성통신지구국이 건설된 후 개통되었으며, 카세그레인 안테나(Cassegrain antenna)라 불리는 이 안테나는 주반사판, 부반사판, ...</div>`)[0];
+                popup_c7a2c4f0fbd0638651338503eba217f6.setContent(html_d7604898583a646c652d94ff1d075b68);
+            
+        
+
+        marker_8731c26bec6358b72d170ff1c66a4b1f.bindPopup(popup_c7a2c4f0fbd0638651338503eba217f6)
+        ;
+
+        
+    
+    
+            marker_8731c26bec6358b72d170ff1c66a4b1f.bindTooltip(
+                `<div>
+                     금산위성통신 제1지구국 안테나설비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_617bd7c8808bc2ee681b9b8a4152c38d = L.marker(
+                [36.1803053, 127.3534048],
+                {}
+            ).addTo(map_6c010f0a55ce2e4012ebf994da3cf41c);
+        
+    
+            var icon_3445fecdbc73f5d1e6808faecd537c97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_617bd7c8808bc2ee681b9b8a4152c38d.setIcon(icon_3445fecdbc73f5d1e6808faecd537c97);
+        
+    
+        var popup_ffc11436535bc6afc4d6fe0532c6f3cf = L.popup({"maxWidth": 150});
+
+        
+            
+                var html_d93ade2621afaf60a038e7c5e9b1b422 = $(`<div id="html_d93ade2621afaf60a038e7c5e9b1b422" style="width: 100.0%; height: 100.0%;">진산지역은 조선조 후기에 이승훈으로부터 세례 받은 윤지충이 가족들에게 천주교를 전파한 곳으로 한국 천주교 역사에서 최초의 박해였던 신해박해 이후 1887년 신앙의 자유가 허락되어 천주교인들이 다시 모일 수 있게 되자 공소형태로 종교집회를 가질 수 있게...</div>`)[0];
+                popup_ffc11436535bc6afc4d6fe0532c6f3cf.setContent(html_d93ade2621afaf60a038e7c5e9b1b422);
+            
+        
+
+        marker_617bd7c8808bc2ee681b9b8a4152c38d.bindPopup(popup_ffc11436535bc6afc4d6fe0532c6f3cf)
+        ;
+
+        
+    
+    
+            marker_617bd7c8808bc2ee681b9b8a4152c38d.bindTooltip(
+                `<div>
+                     천주교 진산 성지 성당
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

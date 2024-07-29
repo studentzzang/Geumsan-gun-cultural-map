@@ -1,0 +1,57 @@
+.legend {
+    position: fixed;
+    background-color: white;
+    padding: 1px;
+    border-radius: 8px;
+    right: 1%;
+    top:1%;
+
+    width: 7%;
+
+    z-index: 9999;
+}
+.content {
+    padding : 2 px;
+}
+.bars{
+    width: 90%;
+    text-align: center;
+    position: relative;
+    display: block;
+    left: 5%;
+}
+
+.bar{
+    width:100%;         
+    border-radius: 5px;
+    margin-top:5px;
+    font-size: 15px;
+}
+.bar:nth-child(1){
+    background-color: green;
+
+    color: white;
+}
+.bar:nth-child(2){
+    background-color: gray; 
+}
+.bar:nth-child(3){
+    background-color: blue;
+    color:white;
+}
+.bar:nth-child(4){
+    background-color: red;
+    color:white;
+}
+.bar:nth-child(5){
+    background-color:mediumvioletred;
+    color:white;
+}
+.bar:nth-child(6){
+    background-color:violet;
+}
+.bar:nth-child(7){
+    background-color: navy;
+    margin-bottom: 5px;
+    color:white;
+}
